@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class TitleController : MonoBehaviour {
+public class TitleManager : MonoBehaviour {
 
 	public static bool Stage01;
 	public static bool Stage02;

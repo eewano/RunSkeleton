@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class DescriptionController : MonoBehaviour {
+public class DescriptionManager : MonoBehaviour {
 
 	private DescriptionSoundEffect descriptionSoundEffect;
 
@@ -26,12 +26,12 @@ public class DescriptionController : MonoBehaviour {
 	
 	void GoToStage01()
 	{
-		TitleController.Stage01 = true;
+		TitleManager.Stage01 = true;
 		SceneManager.LoadScene ("Stage01");
 	}
 	void GoToStage02()
 	{
-		TitleController.Stage02 = true;
+		TitleManager.Stage02 = true;
 		SceneManager.LoadScene ("Stage02");
 	}
 }
