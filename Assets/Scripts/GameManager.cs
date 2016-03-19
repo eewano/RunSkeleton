@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour {
 				if (player.Life () <= 0) {
 					//ここで1度GameManager.csを無効にしないと、ゲームオーバーBGMが重複し続けてしまう
 					//理由は現時点で解決出来ていない
-					//enabled = false;
+					enabled = false;
 					if (PlayerPrefs.GetInt ("Hiscore02") < score02) {
 						PlayerPrefs.SetInt ("Hiscore02", score02);	//HARD STAGE のハイスコアを更新する
 					}

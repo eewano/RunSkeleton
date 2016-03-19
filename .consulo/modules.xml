@@ -590,6 +590,8 @@
         <module-layer name="Editor">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -658,6 +660,8 @@
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -726,6 +730,8 @@
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -794,6 +800,8 @@
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -862,6 +870,8 @@
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -930,6 +940,8 @@
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -998,6 +1010,8 @@
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -1066,6 +1080,8 @@
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -1134,6 +1150,8 @@
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
