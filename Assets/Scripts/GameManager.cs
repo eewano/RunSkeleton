@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	enum State {PLAYING, GAMEOVER}
+	enum State {PLAYING, GAMEOVER, EMPTY}
 	private State state;
 
 	[SerializeField] private PlayerController player;
@@ -45,13 +45,13 @@ public class GameManager : MonoBehaviour {
 				int score01 = CalcScoreStage01 ();
 				score01Label.text = "Score : " + score01 + "pts";
 				if (player.Life () <= 0) {
-					//ここで1度GameController.csを無効にしないと、ゲームオーバーBGMが重複し続けてしまう
-					//理由は現時点で解決出来ていない
-					enabled = false;
 					if (PlayerPrefs.GetInt ("Hiscore01") < score01) {
 						PlayerPrefs.SetInt ("Hiscore01", score01);	//NORMAL STAGE のハイスコアを更新する
 					}
+					//Invokeで0.5病後にGameOver関数を呼び出すが、この0.5秒間に続けてInvokeがひたすら呼び出されてしまう。
 					Invoke ("GameOver", 0.5f);
+					//よって、空のステートに移行させておく事でInvokeの重複呼び出しを防止する。
+                    state = State.EMPTY;
 				}
 			}
 			//----------
@@ -61,13 +61,13 @@ public class GameManager : MonoBehaviour {
 				int score02 = CalcScoreStage02 ();
 				score02Label.text = "Score : " + score02 + "pts";
 				if (player.Life () <= 0) {
-					//ここで1度GameManager.csを無効にしないと、ゲームオーバーBGMが重複し続けてしまう
-					//理由は現時点で解決出来ていない
-					enabled = false;
 					if (PlayerPrefs.GetInt ("Hiscore02") < score02) {
 						PlayerPrefs.SetInt ("Hiscore02", score02);	//HARD STAGE のハイスコアを更新する
 					}
+					//Invokeで0.5病後にGameOver関数を呼び出す間、0.5秒間Invokeがひたすら呼び出されてしまう。
 					Invoke ("GameOver", 0.5f);
+					//よって、空のステートに移行させておく事でInvokeの重複呼び出しを防止する。
+                    state = State.EMPTY;
 				}
 			}
 			//----------
@@ -77,6 +77,9 @@ public class GameManager : MonoBehaviour {
 		case State.GAMEOVER:
 			if(Input.GetMouseButtonDown(0))
 				SceneManager.LoadScene("Title");
+			break;
+
+		case State.EMPTY:
 			break;
 		}
 	}
@@ -113,9 +116,6 @@ public class GameManager : MonoBehaviour {
 	{
 		state = State.GAMEOVER;
 		AllFalse ();
-		//PLAYINGステートでGameManager.csを1度無効にしているので、
-		//ゲームオーバー時に再度有効にしている
-		enabled = true;
 
 		if (TitleManager.Stage01) {
 			score01Label.enabled = true;
@@ -128,7 +128,6 @@ public class GameManager : MonoBehaviour {
 
 		stageBGM.Stop();
 		stageSoundEffect.GameIsOver ();
-
 		//PlayerPrefs.DeleteAll();	//ハイスコアを初期化する
 	}
 
