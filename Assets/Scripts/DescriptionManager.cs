@@ -23,6 +23,11 @@ public class DescriptionManager : MonoBehaviour {
 		descriptionSoundEffect.GameStart();
 		Invoke ("GoToStage02", 1.0f);
 	}
+    void OnStage03ButtonClicked()
+    {
+        descriptionSoundEffect.GameStart();
+        Invoke ("GoToStage03", 1.0f);
+    }
 	
 	void GoToStage01()
 	{
@@ -34,4 +39,9 @@ public class DescriptionManager : MonoBehaviour {
 		TitleManager.Stage02 = true;
 		SceneManager.LoadScene ("Stage02");
 	}
+    void GoToStage03()
+    {
+        TitleManager.Stage03 = true;
+        SceneManager.LoadScene ("Stage03");
+    }
 }
