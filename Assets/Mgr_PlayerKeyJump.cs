@@ -24,24 +24,19 @@ public class Mgr_PlayerKeyJump : MonoBehaviour {
             moveDirection.y = 0;
         }
 
+        Vector3 globalDirection = transform.TransformDirection(moveDirection);
+        charaCtrl.Move(globalDirection * Time.deltaTime);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            keyJump = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.Space))
-        {
-            keyJump = false;
+            MoveJump();
         }
 
-
-        if (keyJump == true)
-        {
-            JumpMode();
-        }
+        moveDirection.y -= gravity * Time.deltaTime;
     }
 
-    void JumpMode() {
-        if (charaCtrl.isGrounded && keyJump == true) {
+    void MoveJump() {
+        if (charaCtrl.isGrounded) {
             moveDirection.y = jumpSpeed;
             jumpAnimator.SetTrigger("Jump");
         }
