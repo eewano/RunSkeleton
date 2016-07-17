@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -31,17 +31,20 @@ public class GameManager : MonoBehaviour {
     private Text toTitleLabel;
     private Text scoreLabel;
     private AudioSource stageBGM;
-    private StageSoundEffect stageSoundEffect;
+    private Mgr_GameSE mgrGameSE;
+
+    private event EveHandPLAYSE gameOverBGM;
 
     void Awake() {
         gameOverLabel = GameObject.Find("GameOverLabel").GetComponent<Text>();
         toTitleLabel = GameObject.Find("ToTitleLabel").GetComponent<Text>();
         scoreLabel = GameObject.Find("ScoreLabel").GetComponent<Text>();
         stageBGM = GameObject.Find("Main Camera").GetComponent<AudioSource>();
-        stageSoundEffect = GameObject.Find("StageSoundEffect").GetComponent<StageSoundEffect>();
+        mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
     }
 
     void Start() {
+        gameOverBGM = new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
         gameOverLabel.text = "";
         toTitleLabel.text = "";
         Playing();
@@ -166,7 +169,7 @@ public class GameManager : MonoBehaviour {
         toTitleLabel.text = "画 面 を ダ ブ ル タ ッ プ\nし て 下 さ い 。";
 
         stageBGM.Stop();
-        stageSoundEffect.GameIsOver();
+        this.gameOverBGM(this, EventArgs.Empty);
         RetryButton.gameObject.SetActive(true);
 
         //PlayerPrefs.DeleteAll();	//ハイスコアを初期化する

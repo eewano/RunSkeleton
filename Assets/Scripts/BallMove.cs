@@ -5,7 +5,7 @@ public class BallMove : MonoBehaviour {
 
     Vector3 startPosition;
 
-    const float amplitude = 5.0f;    //ボールのX軸の振れ幅
+    const float amplitude = 5.0f; //ボールのX軸の振れ幅
     [SerializeField]
     private float speed;
 

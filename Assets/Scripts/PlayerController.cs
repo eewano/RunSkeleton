@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
@@ -13,11 +13,17 @@ public class PlayerController : MonoBehaviour {
 
     private CharacterController controller;
     private Animator animator;
-    private StageSoundEffect stageSoundEffect;
+    private Mgr_GameSE mgrGameSE;
 
     Vector3 moveDirection = Vector3.zero;
     private int life = DefaultLife;
     private float recoverTime = 0.0f;
+
+    private event EveHandPLAYSE jumpSE;
+
+    private event EveHandPLAYSE downSE;
+
+    private event EveHandPLAYSE fallSE;
 
     [SerializeField]
     private float accelerationZ;
@@ -70,11 +76,17 @@ public class PlayerController : MonoBehaviour {
     }
     //----------
 
-    void Start() {
+    void Awake() {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        stageSoundEffect = GameObject.Find("StageSoundEffect").GetComponent<StageSoundEffect>();
+        mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
         Fall = false;
+    }
+
+    void Start() {
+        jumpSE = new EveHandPLAYSE(mgrGameSE.SEJumpEvent);
+        fallSE = new EveHandPLAYSE(mgrGameSE.SEFallEvent);
+        downSE = new EveHandPLAYSE(mgrGameSE.SEDownEvent);
     }
 
     void Update() {
@@ -135,7 +147,7 @@ public class PlayerController : MonoBehaviour {
         if (controller.isGrounded && Jump == true) {
             moveDirection.y = speedJump;
             animator.SetTrigger("Jump");
-            stageSoundEffect.Jump();
+            this.jumpSE(this, EventArgs.Empty);
         }
     }
     //----------
@@ -150,21 +162,21 @@ public class PlayerController : MonoBehaviour {
             life--;
             recoverTime = StunDuration;
             animator.SetTrigger("Down");
-            stageSoundEffect.Down();
+            this.downSE(this, EventArgs.Empty);
         }
 
         if (hit.gameObject.tag == "Ball") {
             life--;
             recoverTime = StunDuration;
             animator.SetTrigger("Down");
-            stageSoundEffect.Down();
+            this.downSE(this, EventArgs.Empty);
             Destroy(hit.gameObject, 1.5f);
         }
 
         if (hit.gameObject.tag == "Fall") {
             Fall = true;
             life = 0;
-            stageSoundEffect.Falling();
+            this.fallSE(this, EventArgs.Empty);
             Destroy(hit.gameObject);
         }
     }

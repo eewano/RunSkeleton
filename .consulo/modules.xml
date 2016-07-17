@@ -608,6 +608,7 @@
         <module-layer name="Editor">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -719,12 +720,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -746,6 +748,7 @@
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -857,12 +860,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -884,6 +888,7 @@
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -995,12 +1000,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1022,6 +1028,7 @@
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1133,12 +1140,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1160,6 +1168,7 @@
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1271,12 +1280,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1298,6 +1308,7 @@
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1409,12 +1420,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1436,6 +1448,7 @@
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1547,12 +1560,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1574,6 +1588,7 @@
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1685,12 +1700,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
@@ -1712,6 +1728,7 @@
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1823,12 +1840,13 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
