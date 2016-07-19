@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour {
 
             case State.PLAYING:
                 //-----NORMAL STAGE のスコアラベルを更新する-----
-                if (TitleManager.Stage01) {
+                if (ManagerTitleMaster.Stage01) {
                     int score01 = CalcScoreStage01();
                     scoreLabel.text = "Score : " + score01 + "pts";
                     if (player.Life() <= 0) {
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour {
                     //----------
 
                     //-----HARD STAGE のスコアラベルを更新する-----
-                else if (TitleManager.Stage02) {
+                else if (ManagerTitleMaster.Stage02) {
                     int score02 = CalcScoreStage02();
                     scoreLabel.text = "Score : " + score02 + "pts";
                     if (player.Life() <= 0) {
@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour {
                     //----------
 
                     //-----SPECIAL STAGE のスコアラベルを更新する-----
-                else if (TitleManager.Stage03) {
+                else if (ManagerTitleMaster.Stage03) {
                     int score03 = CalcScoreStage03();
                     scoreLabel.text = "Score : " + score03 + "pts";
                     if (player.Life() <= 0) {

@@ -609,6 +609,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -723,14 +727,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -749,6 +753,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -863,14 +871,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -889,6 +897,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1003,14 +1015,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1029,6 +1041,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1143,14 +1159,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1169,6 +1185,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1283,14 +1303,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1309,6 +1329,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1423,14 +1447,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1449,6 +1473,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1563,14 +1591,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1589,6 +1617,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1703,14 +1735,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1729,6 +1761,10 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_BtnSpecial.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerBtnCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerKeyJump.cs" />
@@ -1843,14 +1879,14 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SETitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />

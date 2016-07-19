@@ -28,17 +28,17 @@ public class DescriptionManager : MonoBehaviour {
     }
 
     void GoToStage01() {
-        TitleManager.Stage01 = true;
+        ManagerTitleMaster.Stage01 = true;
         SceneManager.LoadScene("Stage01");
     }
 
     void GoToStage02() {
-        TitleManager.Stage02 = true;
+        ManagerTitleMaster.Stage02 = true;
         SceneManager.LoadScene("Stage02");
     }
 
     void GoToStage03() {
-        TitleManager.Stage03 = true;
+        ManagerTitleMaster.Stage03 = true;
         SceneManager.LoadScene("Stage03");
     }
 }
