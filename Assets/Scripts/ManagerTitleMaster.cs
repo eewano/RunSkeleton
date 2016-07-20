@@ -1,60 +1,29 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ManagerTitleMaster : MonoBehaviour {
 
-    public static bool Special;
-
-    private Text titleLabel;
-
     [SerializeField]
-    private Text textScore01;
+    private Text textScoreNormal;
     [SerializeField]
-    private Text textScore02;
+    private Text textScoreHard;
     [SerializeField]
-    private Text textScore03;
+    private Text textScoreSpecial;
     [SerializeField]
-    private GameObject Stage03Button;
-
-    private Mgr_SETitle titleSoundEffect;
-
-    void Awake() {
-        if (PlayerPrefs.GetInt("Hiscore01") >= 3000 && PlayerPrefs.GetInt("Hiscore02") >= 4000)
-            Special = true;
-    }
+    private GameObject buttonSpecial;
 
     void Start() {
-        Stage03Button.gameObject.SetActive(false);
-        titleLabel = GameObject.Find("TitleLabel").GetComponent<Text>();
-        textScore01.text = "Normal : " + PlayerPrefs.GetInt("Hiscore01") + "pts";
-        textScore02.text = "Hard : " + PlayerPrefs.GetInt("Hiscore02") + "pts";
-        textScore03.text = "";
-        titleSoundEffect = GameObject.Find("TitleSoundEffect").GetComponent<Mgr_SETitle>();
+        buttonSpecial.gameObject.SetActive(false);
+        textScoreNormal.text = "Normal : " + PlayerPrefs.GetInt("Hiscore01") + "pts";
+        textScoreHard.text = "Hard : " + PlayerPrefs.GetInt("Hiscore02") + "pts";
+        textScoreSpecial.text = "";
 
-        if (Special == true)
+        if (PlayerPrefs.GetInt("Hiscore01") >= 3000 && PlayerPrefs.GetInt("Hiscore02") >= 4000)
         {
-            Stage03Button.gameObject.SetActive(true);
-            textScore03.text = "Special : " + PlayerPrefs.GetInt("Hiscore03") + "pts";
-            titleLabel.color = new Color(255f / 255f, 0f / 255f, 0f / 255f);
+            buttonSpecial.gameObject.SetActive(true);
+            textScoreSpecial.text = "Special : " + PlayerPrefs.GetInt("Hiscore03") + "pts";
         }
-    }
-
-    void GoToDescription() {
-        SceneManager.LoadScene("Description");
-    }
-
-    void GoToStage01() {
-        SceneManager.LoadScene("Stage01");
-    }
-
-    void GoToStage02() {
-        SceneManager.LoadScene("Stage02");
-    }
-
-    void GoToStage03() {
-        SceneManager.LoadScene("Stage03");
     }
 
     public void StartStage(object o, int i) {

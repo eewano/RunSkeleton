@@ -2,11 +2,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class Mgr_BtnHard : MonoBehaviour {
+public class Mgr_BtnTitleHard : MonoBehaviour {
 
     [SerializeField]
     private GameObject buttonHard;
-    private Mgr_SETitle mgrSETitle;
+    private Mgr_SEButton mgrSEButton;
     private ManagerTitleMaster managerTitleMaster;
 
     private event EveHandPLAYSE playSE_Enter;
@@ -14,12 +14,12 @@ public class Mgr_BtnHard : MonoBehaviour {
     private event EveHandGotoStage goToStageHard;
 
     void Awake() {
-        mgrSETitle = GameObject.Find("Mgr_SETitle").GetComponent<Mgr_SETitle>();
+        mgrSEButton = GameObject.Find("Mgr_SEButton").GetComponent<Mgr_SEButton>();
         managerTitleMaster = GameObject.Find("ManagerTitleMaster").GetComponent<ManagerTitleMaster>();
     }
 
     void Start() {
-        playSE_Enter = new EveHandPLAYSE(mgrSETitle.SE_EnterEvent);
+        playSE_Enter = new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
         goToStageHard = new EveHandGotoStage(managerTitleMaster.StartStage);
     }
 

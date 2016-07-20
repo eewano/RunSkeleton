@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DescriptionSoundEffect : MonoBehaviour {
+public class Mgr_SEExplain : MonoBehaviour {
 
     private AudioSource startSound;
 

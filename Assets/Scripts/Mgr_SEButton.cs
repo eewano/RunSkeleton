@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class Mgr_SETitle : MonoBehaviour {
+public class Mgr_SEButton : MonoBehaviour {
 
     private AudioSource sE_Explain;
     private AudioSource sE_Enter;
