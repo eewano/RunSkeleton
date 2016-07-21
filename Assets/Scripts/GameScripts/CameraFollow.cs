@@ -6,7 +6,7 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour {
 
     [SerializeField]
-    private PlayerController player;
+    private ManagerPlayerMaster player;
     [SerializeField]
     private Transform target;
     private Vector3 offset;
@@ -16,13 +16,6 @@ public class CameraFollow : MonoBehaviour {
     }
 
     void Update() {
-        if (player.Life() <= 0) {
-            Invoke("CameraStop", 1.5f);
-        }
-        if (PlayerController.Fall) {
-            return;
-        }
-        // 自分の座標にtargetの座標を代入する
         GetComponent<Transform>().position = target.position + offset;
     }
 

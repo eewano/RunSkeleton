@@ -3,19 +3,16 @@ using UnityEngine;
 
 public class Mgr_GameSE : MonoBehaviour {
 
-    private AudioSource sEDown;
-    private AudioSource sEFall;
-    private AudioSource bgmGameOver;
-    private AudioSource sEJump;
-    private AudioSource sEMove;
+    private AudioSource
+    sEDown, sEFall, bgmGameOver, sEJump, sEMove;
 
-    void Start() {
+    void Awake() {
         AudioSource[] audioSources = GetComponents<AudioSource>();
-        sEDown = audioSources[0];
-        sEFall = audioSources[1];
-        bgmGameOver = audioSources[2];
-        sEJump = audioSources[3];
-        sEMove = audioSources[4];
+        sEMove = audioSources[0];
+        sEJump = audioSources[1];
+        sEDown = audioSources[2];
+        sEFall = audioSources[3];
+        bgmGameOver = audioSources[4];
     }
 
     public void SEDownEvent(object o, EventArgs e) {
