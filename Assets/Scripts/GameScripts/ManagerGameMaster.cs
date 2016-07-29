@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class ManagerGameMaster : MonoBehaviour {
 
-    private Mgr_GameText mgrGameText;
     private Mgr_GameSE mgrGameSE;
+    private Mgr_GameText mgrGameText;
+    private Mgr_GameButton mgrGameButton;
     private AudioSource stageBGM;
+
     private float doubleTapTime;
     private bool isDoubleTapStart;
+    private bool gameOver = false;
 
     private event EveHandPLAYSE gameOverBGM;
 
@@ -16,76 +19,73 @@ public class ManagerGameMaster : MonoBehaviour {
 
     private event EveHandMoveState eventGAMEOVER;
 
-    enum State {
-        PLAYING,
-        GAMEOVER
-    }
-
-    private State state;
-
     void Awake() {
-        mgrGameText = GameObject.Find("Mgr_GameText").GetComponent<Mgr_GameText>();
         mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
+        mgrGameText = GameObject.Find("Mgr_GameText").GetComponent<Mgr_GameText>();
+        mgrGameButton = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_GameButton>();
         stageBGM = GameObject.Find("StageBGM").GetComponent<AudioSource>();
     }
 
     void Start() {
-        //PLAYINGステート
-        eventPLAYING = new EveHandMoveState(mgrGameText.StatePLAYING);
-        //GAMEOVERステート
+        eventPLAYING = new EveHandMoveState(mgrGameText.ModePLAYING);
+        eventPLAYING = new EveHandMoveState(mgrGameButton.ModePLAYING);
         gameOverBGM = new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
-        eventGAMEOVER = new EveHandMoveState(mgrGameText.StateGAMEOVER);
-        Playing();
+        eventGAMEOVER = new EveHandMoveState(mgrGameText.ModeGAMEOVER);
+        eventGAMEOVER = new EveHandMoveState(mgrGameButton.ModeGAMEOVER);
+        GameReady();
     }
 
     void Update() {
-        switch (state) {
-
-            case State.PLAYING:
-                break;
-
-            case State.GAMEOVER:
-                if (isDoubleTapStart == true)
+        if (gameOver == true)
+        {
+            if (isDoubleTapStart == true)
+            {
+                doubleTapTime += Time.deltaTime;
+                if (doubleTapTime < 0.3f)
                 {
-                    doubleTapTime += Time.deltaTime;
-                    if (doubleTapTime < 0.3f)
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        if (Input.GetMouseButtonDown(0))
-                        {
-                            Debug.Log("double tap");
-                            isDoubleTapStart = false;
-                            doubleTapTime = 0.0f;
-                            SceneManager.LoadScene("Title");
-                        }
-                    }
-                    else
-                    {
-                        Debug.Log("reset");
-                        // reset
+                        Debug.Log("double tap");
                         isDoubleTapStart = false;
                         doubleTapTime = 0.0f;
+                        SceneManager.LoadScene("Title");
                     }
                 }
                 else
                 {
-                    if (Input.GetMouseButtonDown(0))
-                    {
-                        Debug.Log("down");
-                        isDoubleTapStart = true;
-                    }
+                    Debug.Log("reset");
+                    // reset
+                    isDoubleTapStart = false;
+                    doubleTapTime = 0.0f;
                 }
-                break;
+            }
+            else
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("down");
+                    isDoubleTapStart = true;
+                }
+            }
         }
     }
 
-    void Playing() {
-        state = State.PLAYING;
+    void GameReady() {
+        Invoke("GamePlaying", 0.1f);
+    }
+
+    void GamePlaying() {
         this.eventPLAYING(this, EventArgs.Empty);
     }
 
-    void GameOver() {
-        state = State.GAMEOVER;
+    void GameIsOver() {
         stageBGM.Stop();
         this.eventGAMEOVER(this, EventArgs.Empty);
+        this.gameOverBGM(this, EventArgs.Empty);
+        gameOver = true;
+    }
+
+    public void ModeGameOver(object o, EventArgs e) {
+        Invoke("GameIsOver", 0.5f);
     }
 }

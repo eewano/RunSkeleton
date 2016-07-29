@@ -15,6 +15,14 @@ public class Mgr_GameSE : MonoBehaviour {
         bgmGameOver = audioSources[4];
     }
 
+    public void SEMoveEvent(object o, EventArgs e) {
+        sEMove.PlayOneShot(sEMove.clip);
+    }
+
+    public void SEJumpEvent(object o, EventArgs e) {
+        sEJump.PlayOneShot(sEJump.clip);
+    }
+
     public void SEDownEvent(object o, EventArgs e) {
         sEDown.PlayOneShot(sEDown.clip);
     }
@@ -25,13 +33,5 @@ public class Mgr_GameSE : MonoBehaviour {
 
     public void BGMGameOverEvent(object o, EventArgs e) {
         bgmGameOver.PlayOneShot(bgmGameOver.clip);
-    }
-
-    public void SEJumpEvent(object o, EventArgs e) {
-        sEJump.PlayOneShot(sEJump.clip);
-    }
-
-    public void SEMoveEvent(object o, EventArgs e) {
-        sEMove.PlayOneShot(sEMove.clip);
     }
 }

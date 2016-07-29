@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class ManagerPlayerMaster : MonoBehaviour {
 
+    private GameObject player;
     private Mgr_PlayerAnim mgrPlayerAnim;
-    private Mgr_PlayerBtnMoveCtrl mgrPlayerBtnMoveCtrl;
-    private Mgr_PlayerBtnJumpCtrl mgrPlayerBtnJumpCtrl;
     private AreaGenerator areaGenerator;
     private Mgr_GameSE mgrGameSE;
 
@@ -25,7 +25,8 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     private event EveHandGameOver gameOverFlag;
 
-    enum State {
+    private enum State {
+        READY,
         RUN,
         JUMP,
         DOWN,
@@ -35,9 +36,8 @@ public class ManagerPlayerMaster : MonoBehaviour {
     private State statePlayer;
 
     void Awake() {
+        player = GameObject.FindWithTag("Player");
         mgrPlayerAnim = GameObject.FindWithTag("Player").GetComponent<Mgr_PlayerAnim>();
-        mgrPlayerBtnMoveCtrl = GameObject.FindWithTag("Player").GetComponent<Mgr_PlayerBtnMoveCtrl>();
-        mgrPlayerBtnJumpCtrl = GameObject.FindWithTag("Player").GetComponent<Mgr_PlayerBtnJumpCtrl>();
         areaGenerator = GameObject.Find("AreaGenerator").GetComponent<AreaGenerator>();
         mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
     }
@@ -55,11 +55,13 @@ public class ManagerPlayerMaster : MonoBehaviour {
         //FALLステート
         fallSE = new EveHandPLAYSE(mgrGameSE.SEFallEvent);
 
-        RunPlayer();
+        ReadyPlayer();
     }
 
     void Update() {
         switch (statePlayer) {
+            case State.READY:
+                break;
             case State.RUN:
                 break;
             case State.JUMP:
@@ -69,6 +71,11 @@ public class ManagerPlayerMaster : MonoBehaviour {
             case State.FALL:
                 break;
         }
+    }
+
+    void ReadyPlayer() {
+        statePlayer = State.READY;
+        Invoke("RunPlayer", 0.1f);
     }
 
     void RunPlayer() {
@@ -87,12 +94,19 @@ public class ManagerPlayerMaster : MonoBehaviour {
         this.downSE(this, EventArgs.Empty);
         this.stateDOWN(this, EventArgs.Empty);
         this.gameOverFlag(this, EventArgs.Empty);
+        StartCoroutine(DeletePlayer());
     }
 
     void FALLPlayer() {
         statePlayer = State.DOWN;
         this.fallSE(this, EventArgs.Empty);
         this.stateFALL(this, EventArgs.Empty);
+        StartCoroutine(DeletePlayer());
+    }
+
+    IEnumerator DeletePlayer() {
+        yield return new WaitForSeconds(0.8f);
+        player.gameObject.SetActive(false);
     }
 
     public void OrderToRun(object o, EventArgs e) {
@@ -109,17 +123,5 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     public void OrderToFall(object o, EventArgs e) {
         FALLPlayer();
-    }
-
-    void OnTriggerEnter(Collider hit) {
-        if (hit.gameObject.tag == "Obstacle" || hit.gameObject.tag == "Ball")
-        {
-            DOWNPlayer();
-        }
-
-        if (hit.gameObject.tag == "Fall")
-        {
-            FALLPlayer();
-        }
     }
 }

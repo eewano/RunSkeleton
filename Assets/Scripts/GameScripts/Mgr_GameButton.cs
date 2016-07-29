@@ -7,32 +7,32 @@ public class Mgr_GameButton : MonoBehaviour {
     private Mgr_PlayerBtnJumpCtrl mgrPlayerBtnJumpCtrl;
     private Mgr_BtnRetry mgrBtnRetry;
 
-    private event EveHandAppearHide statePLAYING;
+    private event EveHandAppearHide btnModePLAYING;
 
-    private event EveHandAppearHide stateGAMEOVER;
+    private event EveHandAppearHide btnModeGAMEOVER;
 
     void Awake() {
         mgrPlayerBtnMoveCtrl = GameObject.FindWithTag("Player").GetComponent<Mgr_PlayerBtnMoveCtrl>();
         mgrPlayerBtnJumpCtrl = GameObject.FindWithTag("Player").GetComponent<Mgr_PlayerBtnJumpCtrl>();
-        mgrBtnRetry = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_BtnRetry>();
+        mgrBtnRetry = GetComponent<Mgr_BtnRetry>();
     }
 
     void Start() {
         //PLAYINGステート
-        statePLAYING = new EveHandAppearHide(mgrPlayerBtnMoveCtrl.AppearBtnEvent);
-        statePLAYING = new EveHandAppearHide(mgrPlayerBtnJumpCtrl.AppearBtnEvent);
-        statePLAYING = new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
+        btnModePLAYING = new EveHandAppearHide(mgrPlayerBtnMoveCtrl.AppearBtnEvent);
+        btnModePLAYING = new EveHandAppearHide(mgrPlayerBtnJumpCtrl.AppearBtnEvent);
+        btnModePLAYING = new EveHandAppearHide(mgrBtnRetry.HideBtnEvent);
         //GAMEOVERステート
-        stateGAMEOVER = new EveHandAppearHide(mgrPlayerBtnMoveCtrl.HideBtnEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrPlayerBtnJumpCtrl.HideBtnEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrBtnRetry.HideBtnEvent);
+        btnModeGAMEOVER = new EveHandAppearHide(mgrPlayerBtnMoveCtrl.HideBtnEvent);
+        btnModeGAMEOVER = new EveHandAppearHide(mgrPlayerBtnJumpCtrl.HideBtnEvent);
+        btnModeGAMEOVER = new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
     }
 
-    public void StatePLAYING(object o, EventArgs e) {
-        this.statePLAYING(this, EventArgs.Empty);
+    public void ModePLAYING(object o, EventArgs e) {
+        this.btnModePLAYING(this, EventArgs.Empty);
     }
 
-    public void StateGAMEOVER(object o, EventArgs e) {
-        this.stateGAMEOVER(this, EventArgs.Empty);
+    public void ModeGAMEOVER(object o, EventArgs e) {
+        this.btnModeGAMEOVER(this, EventArgs.Empty);
     }
 }

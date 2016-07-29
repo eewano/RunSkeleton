@@ -6,29 +6,29 @@ public class Mgr_GameText : MonoBehaviour {
     private Mgr_TextGameOver mgrTextGameOver;
     private Mgr_TextToTitle mgrTextToTitle;
 
-    private event EveHandAppearHide statePLAYING;
+    private event EveHandAppearHide textModePLAYING;
 
-    private event EveHandAppearHide stateGAMEOVER;
+    private event EveHandAppearHide textModeGAMEOVER;
 
     void Awake() {
-        mgrTextGameOver = GameObject.Find("Mgr_GameText").GetComponent<Mgr_TextGameOver>();
-        mgrTextToTitle = GameObject.Find("Mgr_GameText").GetComponent<Mgr_TextToTitle>();
+        mgrTextGameOver = GetComponent<Mgr_TextGameOver>();
+        mgrTextToTitle = GetComponent<Mgr_TextToTitle>();
     }
 
     void Start() {
         //PLAYINGステート
-        statePLAYING = new EveHandAppearHide(mgrTextGameOver.HideTextEvent);
-        statePLAYING = new EveHandAppearHide(mgrTextToTitle.HideTextEvent);
+        textModePLAYING = new EveHandAppearHide(mgrTextGameOver.HideTextEvent);
+        textModePLAYING = new EveHandAppearHide(mgrTextToTitle.HideTextEvent);
         //GAMEOVERステート
-        stateGAMEOVER = new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
+        textModeGAMEOVER = new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
+        textModeGAMEOVER = new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
     }
 
-    public void StatePLAYING(object o, EventArgs e) {
-        this.statePLAYING(this, EventArgs.Empty);
+    public void ModePLAYING(object o, EventArgs e) {
+        this.textModePLAYING(this, EventArgs.Empty);
     }
 
-    public void StateGAMEOVER(object o, EventArgs e) {
-        this.stateGAMEOVER(this, EventArgs.Empty);
+    public void ModeGAMEOVER(object o, EventArgs e) {
+        this.textModeGAMEOVER(this, EventArgs.Empty);
     }
 }

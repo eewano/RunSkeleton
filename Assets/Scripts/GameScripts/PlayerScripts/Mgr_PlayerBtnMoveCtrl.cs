@@ -9,42 +9,36 @@ public class Mgr_PlayerBtnMoveCtrl : MonoBehaviour {
     private GameObject btnRight;
     [SerializeField]
     private float moveSpeed;
-    private Mgr_GameSE mgrGameSE;
 
     private bool leftON = false;
     private bool rightON = false;
 
-    void Awake() {
-        mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
-    }
-
-    void Start() {
-    }
-
-    void Update() {
-        if (leftON)
-        {
-            MoveLeft();
-        } else if (rightON)
-        {
-            MoveRight();
-        }
-    }
-
-    void PushLeftDown() {
+    public void PushLeftDown() {
         leftON = true;
     }
 
-    void PushLeftUp() {
+    public void PushLeftUp() {
         leftON = false;
     }
 
-    void PushRightDown() {
+    public void PushRightDown() {
         rightON = true;
     }
 
-    void PushRightUp() {
+    public void PushRightUp() {
         rightON = false;
+    }
+
+    void Update() {
+        if (leftON == true)
+        {
+            MoveLeft();
+        }
+        else if (rightON == true)
+        {
+            MoveRight();
+        }
+        moveSpeed = 0.0f;
     }
 
     void MoveLeft() {

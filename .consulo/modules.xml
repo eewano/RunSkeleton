@@ -608,6 +608,7 @@
         <module-layer name="Editor">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -724,8 +725,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -781,6 +782,7 @@
         <module-layer name="Linux (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -897,8 +899,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -954,6 +956,7 @@
         <module-layer name="Linux (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1070,8 +1073,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1127,6 +1130,7 @@
         <module-layer name="Linux (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1243,8 +1247,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1300,6 +1304,7 @@
         <module-layer name="MacOS (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1416,8 +1421,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1473,6 +1478,7 @@
         <module-layer name="MacOS (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1589,8 +1595,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1646,6 +1652,7 @@
         <module-layer name="MacOS (any)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1762,8 +1769,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1819,6 +1826,7 @@
         <module-layer name="Windows (32 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1935,8 +1943,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1992,6 +2000,7 @@
         <module-layer name="Windows (64 bit)">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -2108,8 +2117,8 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollider.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />

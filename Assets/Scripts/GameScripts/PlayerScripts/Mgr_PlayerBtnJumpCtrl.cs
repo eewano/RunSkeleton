@@ -4,7 +4,9 @@ using UnityEngine;
 public class Mgr_PlayerBtnJumpCtrl : MonoBehaviour {
 
     [SerializeField]
-    private float jumpHeight = 4.0f;
+    private float jumpHeight = 10.0f;
+    [SerializeField]
+    private float gravityPower = 1.0f;
     [SerializeField]
     private GameObject btnJump;
     private ManagerPlayerMaster managerPlayerMaster;
@@ -17,7 +19,7 @@ public class Mgr_PlayerBtnJumpCtrl : MonoBehaviour {
     private event EveHandMoveState orderToJump;
 
     void Awake() {
-        managerPlayerMaster = GameObject.FindWithTag("Player").GetComponent<ManagerPlayerMaster>();
+        managerPlayerMaster = GameObject.Find("ManagerPlayerMaster").GetComponent<ManagerPlayerMaster>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -31,7 +33,7 @@ public class Mgr_PlayerBtnJumpCtrl : MonoBehaviour {
             if (jumpMode == true || Input.GetKey(KeyCode.Space))
             {
                 this.orderToJump(this, EventArgs.Empty);
-                speedY = Mathf.Sqrt(0.5f * Mathf.Abs(Physics.gravity.y) * jumpHeight);
+                speedY = Mathf.Sqrt(gravityPower * Mathf.Abs(Physics.gravity.y) * jumpHeight);
                 rb.velocity = Vector3.up * speedY;
                 isGrounded = false;
                 jumpMode = false;
@@ -48,7 +50,13 @@ public class Mgr_PlayerBtnJumpCtrl : MonoBehaviour {
     }
 
     public void IsGroundedON(object o, EventArgs e) {
+        Debug.Log("true");
         isGrounded = true;
+    }
+
+    public void IsGroundedOFF(object o, EventArgs e) {
+        Debug.Log("false");
+        isGrounded = false;
     }
 
     public void OnBtnJumpClicked() {
