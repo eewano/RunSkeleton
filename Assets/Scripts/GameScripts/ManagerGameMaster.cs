@@ -85,7 +85,7 @@ public class ManagerGameMaster : MonoBehaviour {
         gameOver = true;
     }
 
-    public void ModeGameOver(object o, EventArgs e) {
+    public void ModeGameOver() {
         Invoke("GameIsOver", 0.5f);
     }
 }

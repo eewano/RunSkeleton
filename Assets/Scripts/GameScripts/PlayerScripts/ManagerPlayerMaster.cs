@@ -26,7 +26,6 @@ public class ManagerPlayerMaster : MonoBehaviour {
     private event EveHandGameOver gameOverFlag;
 
     private enum State {
-        READY,
         RUN,
         JUMP,
         DOWN,
@@ -55,13 +54,11 @@ public class ManagerPlayerMaster : MonoBehaviour {
         //FALLステート
         fallSE = new EveHandPLAYSE(mgrGameSE.SEFallEvent);
 
-        ReadyPlayer();
+        RunPlayer();
     }
 
     void Update() {
         switch (statePlayer) {
-            case State.READY:
-                break;
             case State.RUN:
                 break;
             case State.JUMP:
@@ -71,11 +68,6 @@ public class ManagerPlayerMaster : MonoBehaviour {
             case State.FALL:
                 break;
         }
-    }
-
-    void ReadyPlayer() {
-        statePlayer = State.READY;
-        Invoke("RunPlayer", 0.1f);
     }
 
     void RunPlayer() {

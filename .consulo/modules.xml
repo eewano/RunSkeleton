@@ -4,8 +4,10 @@
     <modules>
       <module name="RunSkeleton" dirurl="file://$PROJECT_DIR$" current-layer="Editor">
         <module-layer name="Editor">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="Editor" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Editor" file-name="$ModuleName$">
             <define>UNITY_EDITOR</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -16,8 +18,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux32" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux32" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -28,8 +32,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -40,8 +46,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (any)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="LinuxUniversal" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="LinuxUniversal" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -52,8 +60,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -64,8 +74,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -76,8 +88,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (any)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="OSXUniversal" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSXUniversal" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -88,8 +102,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Windows (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -100,8 +116,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Windows (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.5" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -609,6 +627,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -725,8 +744,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -741,12 +758,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -783,6 +798,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -899,8 +915,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -915,12 +929,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -957,6 +969,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1073,8 +1086,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1089,12 +1100,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -1131,6 +1140,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1247,8 +1257,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1263,12 +1271,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -1305,6 +1311,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1421,8 +1428,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1437,12 +1442,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -1479,6 +1482,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1595,8 +1599,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1611,12 +1613,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -1653,6 +1653,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1769,8 +1770,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1785,12 +1784,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -1827,6 +1824,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -1943,8 +1941,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -1959,12 +1955,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />
@@ -2001,6 +1995,7 @@
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Mgr_PlayerCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBManager.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/NCMB/NCMBSettings.cs" />
@@ -2117,8 +2112,6 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/JumpCollision.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
@@ -2133,12 +2126,10 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/ManagerPlayerMaster.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerAnim.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnJumpCtrl.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerBtnMoveCtrl.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/Mgr_PlayerKeyCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/PlayerScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/Mgr_SEButton.cs" />

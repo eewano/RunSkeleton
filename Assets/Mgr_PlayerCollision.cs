@@ -17,9 +17,7 @@ public class Mgr_PlayerCollision : MonoBehaviour {
 
     void Start() {
         playerObjHit = new EveHandMoveState(managerPlayerMaster.OrderToDown);
-        playerObjHit = new EveHandMoveState(managerGameMaster.ModeGameOver);
         playerFall = new EveHandMoveState(managerPlayerMaster.OrderToFall);
-        playerFall = new EveHandMoveState(managerGameMaster.ModeGameOver);
     }
 
     void OnCollisionEnter(Collision hit) {
