@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class Mgr_PlayerCollision : MonoBehaviour {
 
+    private delegate void EveHandMotion(object sender, EventArgs e);
+
     private ManagerPlayerMaster managerPlayerMaster;
     private ManagerGameMaster managerGameMaster;
 
-    private event EveHandMoveState playerObjHit;
+    private event EveHandMotion playerObjHit;
 
-    private event EveHandMoveState playerFall;
+    private event EveHandMotion playerFall;
 
     void Awake() {
         managerPlayerMaster = GameObject.Find("ManagerPlayerMaster").GetComponent<ManagerPlayerMaster>();
@@ -16,8 +18,8 @@ public class Mgr_PlayerCollision : MonoBehaviour {
     }
 
     void Start() {
-        playerObjHit = new EveHandMoveState(managerPlayerMaster.OrderToDown);
-        playerFall = new EveHandMoveState(managerPlayerMaster.OrderToFall);
+        playerObjHit = new EveHandMotion(managerPlayerMaster.OrderToDown);
+        playerFall = new EveHandMotion(managerPlayerMaster.OrderToFall);
     }
 
     void OnCollisionEnter(Collision hit) {

@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class ManagerGameMaster : MonoBehaviour {
 
+    private delegate void EveHandAppearHide(object sender, EventArgs e);
+
+    private delegate void EveHandPLAYSE(object sender, EventArgs e);
+
+    private PlayerController playerController;
     private Mgr_GameSE mgrGameSE;
-    private Mgr_GameText mgrGameText;
-    private Mgr_GameButton mgrGameButton;
+    private Mgr_TextGameOver mgrTextGameOver;
+    private Mgr_TextToTitle mgrTextToTitle;
+    private Mgr_BtnRetry mgrBtnRetry;
     private AudioSource stageBGM;
 
     private float doubleTapTime;
@@ -15,23 +21,29 @@ public class ManagerGameMaster : MonoBehaviour {
 
     private event EveHandPLAYSE gameOverBGM;
 
-    private event EveHandMoveState eventPLAYING;
+    private event EveHandAppearHide statePLAYING;
 
-    private event EveHandMoveState eventGAMEOVER;
+    private event EveHandAppearHide stateGAMEOVER;
 
     void Awake() {
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
-        mgrGameText = GameObject.Find("Mgr_GameText").GetComponent<Mgr_GameText>();
-        mgrGameButton = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_GameButton>();
+        mgrTextGameOver = GameObject.Find("Mgr_GameText").GetComponent<Mgr_TextGameOver>();
+        mgrTextToTitle = GameObject.Find("Mgr_GameText").GetComponent<Mgr_TextToTitle>();
+        mgrBtnRetry = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_BtnRetry>();
         stageBGM = GameObject.Find("StageBGM").GetComponent<AudioSource>();
     }
 
     void Start() {
-        eventPLAYING = new EveHandMoveState(mgrGameText.ModePLAYING);
-        eventPLAYING = new EveHandMoveState(mgrGameButton.ModePLAYING);
+        statePLAYING += new EveHandAppearHide(playerController.AppearBtnEvent);
+        statePLAYING += new EveHandAppearHide(mgrTextGameOver.HideTextEvent);
+        statePLAYING += new EveHandAppearHide(mgrTextToTitle.HideTextEvent);
+        statePLAYING += new EveHandAppearHide(mgrBtnRetry.HideBtnEvent);
         gameOverBGM = new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
-        eventGAMEOVER = new EveHandMoveState(mgrGameText.ModeGAMEOVER);
-        eventGAMEOVER = new EveHandMoveState(mgrGameButton.ModeGAMEOVER);
+        stateGAMEOVER = new EveHandAppearHide(playerController.HideBtnEvent);
+        stateGAMEOVER = new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
+        stateGAMEOVER = new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
+        stateGAMEOVER = new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
         GameReady();
     }
 
@@ -45,7 +57,7 @@ public class ManagerGameMaster : MonoBehaviour {
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
-                        Debug.Log("double tap");
+                        //                        Debug.Log("double tap");
                         isDoubleTapStart = false;
                         doubleTapTime = 0.0f;
                         SceneManager.LoadScene("Title");
@@ -53,7 +65,7 @@ public class ManagerGameMaster : MonoBehaviour {
                 }
                 else
                 {
-                    Debug.Log("reset");
+                    //                    Debug.Log("reset");
                     // reset
                     isDoubleTapStart = false;
                     doubleTapTime = 0.0f;
@@ -63,7 +75,7 @@ public class ManagerGameMaster : MonoBehaviour {
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    Debug.Log("down");
+                    //                    Debug.Log("down");
                     isDoubleTapStart = true;
                 }
             }
@@ -75,12 +87,12 @@ public class ManagerGameMaster : MonoBehaviour {
     }
 
     void GamePlaying() {
-        this.eventPLAYING(this, EventArgs.Empty);
+        this.statePLAYING(this, EventArgs.Empty);
     }
 
     void GameIsOver() {
         stageBGM.Stop();
-        this.eventGAMEOVER(this, EventArgs.Empty);
+        this.stateGAMEOVER(this, EventArgs.Empty);
         this.gameOverBGM(this, EventArgs.Empty);
         gameOver = true;
     }

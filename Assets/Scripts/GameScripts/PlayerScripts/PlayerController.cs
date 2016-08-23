@@ -3,14 +3,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    private delegate void EveHandMotion(object sender, EventArgs e);
+
     private ManagerPlayerMaster managerPlayerMaster;
     private ManagerGameMaster managerGameMaster;
 
-    private event EveHandMoveState orderToJump;
+    private event EveHandMotion orderToJump;
 
-    private event EveHandMoveState playerObjHit;
+    private event EveHandMotion playerObjHit;
 
-    private event EveHandMoveState playerFall;
+    private event EveHandMotion playerFall;
 
     //左右移動関連----------
     [SerializeField]
@@ -79,9 +81,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Start() {
-        orderToJump = new EveHandMoveState(managerPlayerMaster.OrderToJump);
-        playerObjHit = new EveHandMoveState(managerPlayerMaster.OrderToDown);
-        playerFall = new EveHandMoveState(managerPlayerMaster.OrderToFall);
+        orderToJump = new EveHandMotion(managerPlayerMaster.OrderToJump);
+        playerObjHit = new EveHandMotion(managerPlayerMaster.OrderToDown);
+        playerFall = new EveHandMotion(managerPlayerMaster.OrderToFall);
     }
 
     void Update() {

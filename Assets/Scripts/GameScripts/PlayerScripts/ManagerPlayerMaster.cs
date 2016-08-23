@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ManagerPlayerMaster : MonoBehaviour {
 
+    private delegate void EveHandMotion(object sender, EventArgs e);
+
+    private delegate void EveHandPLAYSE(object sender, EventArgs e);
+
     private GameObject player;
     private Mgr_PlayerAnim mgrPlayerAnim;
     private AreaGenerator areaGenerator;
@@ -15,15 +19,15 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     private event EveHandPLAYSE fallSE;
 
-    private event EveHandPlayerMotion stateRUN;
+    private event EveHandMotion motionRUN;
 
-    private event EveHandPlayerMotion stateJUMP;
+    private event EveHandMotion motionJUMP;
 
-    private event EveHandPlayerMotion stateDOWN;
+    private event EveHandMotion motionDOWN;
 
-    private event EveHandPlayerMotion stateFALL;
+    private event EveHandMotion motionFALL;
 
-    private event EveHandGameOver gameOverFlag;
+    private event EveHandMotion gameOverFlag;
 
     private enum State {
         RUN,
@@ -43,14 +47,14 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     void Start() {
         //RUNステート
-        stateRUN = new EveHandPlayerMotion(mgrPlayerAnim.MotionRunEvent);
+        motionRUN = new EveHandMotion(mgrPlayerAnim.MotionRunEvent);
         //JUMPステート
         jumpSE = new EveHandPLAYSE(mgrGameSE.SEJumpEvent);
-        stateJUMP = new EveHandPlayerMotion(mgrPlayerAnim.MotionJumpEvent);
+        motionJUMP = new EveHandMotion(mgrPlayerAnim.MotionJumpEvent);
         //DOWNステート
         downSE = new EveHandPLAYSE(mgrGameSE.SEDownEvent);
-        stateDOWN = new EveHandPlayerMotion(mgrPlayerAnim.MotionDownEvent);
-        gameOverFlag = new EveHandGameOver(areaGenerator.GameOverFlag);
+        motionDOWN = new EveHandMotion(mgrPlayerAnim.MotionDownEvent);
+        gameOverFlag = new EveHandMotion(areaGenerator.GameOverFlag);
         //FALLステート
         fallSE = new EveHandPLAYSE(mgrGameSE.SEFallEvent);
 
@@ -72,19 +76,19 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     void RunPlayer() {
         statePlayer = State.RUN;
-        this.stateRUN(this, EventArgs.Empty);
+        this.motionRUN(this, EventArgs.Empty);
     }
 
     void JUMPPlayer() {
         statePlayer = State.JUMP;
         this.jumpSE(this, EventArgs.Empty);
-        this.stateJUMP(this, EventArgs.Empty);
+        this.motionJUMP(this, EventArgs.Empty);
     }
 
     void DOWNPlayer() {
         statePlayer = State.DOWN;
         this.downSE(this, EventArgs.Empty);
-        this.stateDOWN(this, EventArgs.Empty);
+        this.motionDOWN(this, EventArgs.Empty);
         this.gameOverFlag(this, EventArgs.Empty);
         StartCoroutine(DeletePlayer());
     }
@@ -92,7 +96,7 @@ public class ManagerPlayerMaster : MonoBehaviour {
     void FALLPlayer() {
         statePlayer = State.DOWN;
         this.fallSE(this, EventArgs.Empty);
-        this.stateFALL(this, EventArgs.Empty);
+        this.motionFALL(this, EventArgs.Empty);
         StartCoroutine(DeletePlayer());
     }
 

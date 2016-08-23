@@ -9,11 +9,14 @@ public class Mgr_TextToTitle : MonoBehaviour {
     [SerializeField]
     private Outline toTitleOutLine;
 
-    void Start() {
+    void Awake() {
         toTitleText.fontSize = 40;
         toTitleText.color = new Color32(255, 0, 128, 255);
         toTitleOutLine.effectDistance = new Vector2(2, 2);
         toTitleOutLine.effectColor = new Color32(255, 255, 255, 255);
+    }
+
+    void Start() {
         toTitleText.text = "";
     }
 

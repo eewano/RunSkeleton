@@ -7,9 +7,12 @@ public class Mgr_TextGameOver : MonoBehaviour {
     [SerializeField]
     private Text gameOverText;
 
-    void Start() {
+    void Awake() {
         gameOverText.fontSize = 120;
         gameOverText.color = new Color32(255, 0, 0, 255);
+    }
+
+    void Start() {
         gameOverText.text = "";
     }
 
