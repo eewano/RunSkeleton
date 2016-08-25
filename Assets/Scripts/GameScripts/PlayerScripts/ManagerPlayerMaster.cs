@@ -47,16 +47,16 @@ public class ManagerPlayerMaster : MonoBehaviour {
 
     void Start() {
         //RUNステート
-        motionRUN = new EveHandMotion(mgrPlayerAnim.MotionRunEvent);
+        motionRUN += new EveHandMotion(mgrPlayerAnim.MotionRunEvent);
         //JUMPステート
-        jumpSE = new EveHandPLAYSE(mgrGameSE.SEJumpEvent);
-        motionJUMP = new EveHandMotion(mgrPlayerAnim.MotionJumpEvent);
+        jumpSE += new EveHandPLAYSE(mgrGameSE.SEJumpEvent);
+        motionJUMP += new EveHandMotion(mgrPlayerAnim.MotionJumpEvent);
         //DOWNステート
-        downSE = new EveHandPLAYSE(mgrGameSE.SEDownEvent);
-        motionDOWN = new EveHandMotion(mgrPlayerAnim.MotionDownEvent);
-        gameOverFlag = new EveHandMotion(areaGenerator.GameOverFlag);
+        downSE += new EveHandPLAYSE(mgrGameSE.SEDownEvent);
+        motionDOWN += new EveHandMotion(mgrPlayerAnim.MotionDownEvent);
+        gameOverFlag += new EveHandMotion(areaGenerator.GameOverFlag);
         //FALLステート
-        fallSE = new EveHandPLAYSE(mgrGameSE.SEFallEvent);
+        fallSE += new EveHandPLAYSE(mgrGameSE.SEFallEvent);
 
         RunPlayer();
     }

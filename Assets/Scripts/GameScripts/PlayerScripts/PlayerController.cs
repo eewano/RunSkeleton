@@ -81,9 +81,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Start() {
-        orderToJump = new EveHandMotion(managerPlayerMaster.OrderToJump);
-        playerObjHit = new EveHandMotion(managerPlayerMaster.OrderToDown);
-        playerFall = new EveHandMotion(managerPlayerMaster.OrderToFall);
+        orderToJump += new EveHandMotion(managerPlayerMaster.OrderToJump);
+        playerObjHit += new EveHandMotion(managerPlayerMaster.OrderToDown);
+        playerFall += new EveHandMotion(managerPlayerMaster.OrderToFall);
     }
 
     void Update() {

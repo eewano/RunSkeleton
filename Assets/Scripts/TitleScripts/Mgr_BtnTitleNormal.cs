@@ -19,8 +19,8 @@ public class Mgr_BtnTitleNormal : MonoBehaviour {
     }
 
     void Start() {
-        playSE_Enter = new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
-        goToStageNormal = new EveHandGotoStage(managerTitleMaster.StartStage);
+        playSE_Enter += new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
+        goToStageNormal += new EveHandGotoStage(managerTitleMaster.StartStage);
     }
 
     public void OnButtonNormalClicked() {

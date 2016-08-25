@@ -39,11 +39,11 @@ public class ManagerGameMaster : MonoBehaviour {
         statePLAYING += new EveHandAppearHide(mgrTextGameOver.HideTextEvent);
         statePLAYING += new EveHandAppearHide(mgrTextToTitle.HideTextEvent);
         statePLAYING += new EveHandAppearHide(mgrBtnRetry.HideBtnEvent);
-        gameOverBGM = new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
-        stateGAMEOVER = new EveHandAppearHide(playerController.HideBtnEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
-        stateGAMEOVER = new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
+        gameOverBGM += new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
+        stateGAMEOVER += new EveHandAppearHide(playerController.HideBtnEvent);
+        stateGAMEOVER += new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
+        stateGAMEOVER += new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
+        stateGAMEOVER += new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
         GameReady();
     }
 

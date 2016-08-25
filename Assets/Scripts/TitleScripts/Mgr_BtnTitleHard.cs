@@ -19,8 +19,8 @@ public class Mgr_BtnTitleHard : MonoBehaviour {
     }
 
     void Start() {
-        playSE_Enter = new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
-        goToStageHard = new EveHandGotoStage(managerTitleMaster.StartStage);
+        playSE_Enter += new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
+        goToStageHard += new EveHandGotoStage(managerTitleMaster.StartStage);
     }
 
     public void OnButtonHardClicked() {

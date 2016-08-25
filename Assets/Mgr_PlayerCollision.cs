@@ -18,8 +18,8 @@ public class Mgr_PlayerCollision : MonoBehaviour {
     }
 
     void Start() {
-        playerObjHit = new EveHandMotion(managerPlayerMaster.OrderToDown);
-        playerFall = new EveHandMotion(managerPlayerMaster.OrderToFall);
+        playerObjHit += new EveHandMotion(managerPlayerMaster.OrderToDown);
+        playerFall += new EveHandMotion(managerPlayerMaster.OrderToFall);
     }
 
     void OnCollisionEnter(Collision hit) {

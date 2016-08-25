@@ -19,8 +19,8 @@ public class Mgr_BtnTitleSpecial : MonoBehaviour {
     }
 
     void Start() {
-        playSE_Enter = new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
-        goToStageSpecial = new EveHandGotoStage(managerTitleMaster.StartStage);
+        playSE_Enter += new EveHandPLAYSE(mgrSEButton.SE_EnterEvent);
+        goToStageSpecial += new EveHandGotoStage(managerTitleMaster.StartStage);
     }
 
     public void OnButtonSpecialClicked() {
