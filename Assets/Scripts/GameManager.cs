@@ -20,16 +20,12 @@ public class GameManager : MonoBehaviour {
     private Text gameOverLabel;
     private Text toTitleLabel;
     private Text scoreLabel;
-    private AudioSource stageBGM;
-    private StageSoundEffect stageSoundEffect;
 
     void Awake()
     {
         gameOverLabel = GameObject.Find("GameOverLabel").GetComponent<Text>();
         toTitleLabel = GameObject.Find("ToTitleLabel").GetComponent<Text>();
         scoreLabel = GameObject.Find("ScoreLabel").GetComponent<Text>();
-        stageBGM = GameObject.Find("Main Camera").GetComponent<AudioSource>();
-        stageSoundEffect = GameObject.Find("StageSoundEffect").GetComponent<StageSoundEffect>();
     }
 
     void Start()
@@ -44,54 +40,6 @@ public class GameManager : MonoBehaviour {
         switch (state) {
 
             case State.PLAYING:
-                //-----NORMAL STAGE のスコアラベルを更新する-----
-                if (TitleManager.Stage01) {
-                    int score01 = CalcScoreStage01 ();
-                    scoreLabel.text = "Score : " + score01 + "pts";
-                    if (player.Life () <= 0) {
-                        if (PlayerPrefs.GetInt ("Hiscore01") < score01) {
-                            PlayerPrefs.SetInt ("Hiscore01", score01);	//NORMAL STAGE のハイスコアを更新する
-                        }
-                        //Invokeで0.5病後にGameOver関数を呼び出すが、この0.5秒間に続けてInvokeがひたすら呼び出されてしまう。
-                        Invoke ("GameOver", 0.5f);
-                        //よって、空のステートに移行させておく事でInvokeの重複呼び出しを防止する。
-                        state = State.EMPTY;
-                    }
-                }
-                //----------
-
-                //-----HARD STAGE のスコアラベルを更新する-----
-                else if(TitleManager.Stage02) {
-                    int score02 = CalcScoreStage02 ();
-                    scoreLabel.text = "Score : " + score02 + "pts";
-                    if (player.Life () <= 0) {
-                        if (PlayerPrefs.GetInt ("Hiscore02") < score02) {
-                            PlayerPrefs.SetInt ("Hiscore02", score02);	//HARD STAGE のハイスコアを更新する
-                        }
-                        //Invokeで0.5病後にGameOver関数を呼び出すが、この0.5秒間に続けてInvokeがひたすら呼び出されてしまう。
-                        Invoke ("GameOver", 0.5f);
-                        //よって、空のステートに移行させておく事でInvokeの重複呼び出しを防止する。
-                        state = State.EMPTY;
-                    }
-                }
-                //----------
-
-                //-----SPECIAL STAGE のスコアラベルを更新する-----
-                else if(TitleManager.Stage03) {
-                    int score03 = CalcScoreStage03 ();
-                    scoreLabel.text = "Score : " + score03 + "pts";
-                    if (player.Life () <= 0) {
-                        if (PlayerPrefs.GetInt ("Hiscore03") < score03) {
-                            PlayerPrefs.SetInt ("Hiscore03", score03);	//HARD STAGE のハイスコアを更新する
-                        }
-                        //Invokeで0.5病後にGameOver関数を呼び出すが、この0.5秒間に続けてInvokeがひたすら呼び出されてしまう。
-                        Invoke ("GameOver", 0.5f);
-                        //よって、空のステートに移行させておく事でInvokeの重複呼び出しを防止する。
-                        state = State.EMPTY;
-                    }
-                }
-                //----------
-
                 break;
 
             case State.GAMEOVER:
@@ -124,8 +72,6 @@ public class GameManager : MonoBehaviour {
                         isDoubleTapStart = true;
                     }
                 }
-                //if(Input.GetMouseButtonDown(0))
-                //    SceneManager.LoadScene("Title");
                 break;
 
             case State.EMPTY:
@@ -161,8 +107,6 @@ public class GameManager : MonoBehaviour {
         gameOverLabel.text = "G A M E\nO V E R";
         toTitleLabel.text = "画 面 を ダ ブ ル タ ッ プ\nし て 下 さ い 。";
 
-        stageBGM.Stop();
-        stageSoundEffect.GameIsOver ();
         RetryButton.gameObject.SetActive(true);
 
         //PlayerPrefs.DeleteAll();	//ハイスコアを初期化する

@@ -4,8 +4,10 @@
     <modules>
       <module name="RunSkeleton" dirurl="file://$PROJECT_DIR$" current-layer="Editor">
         <module-layer name="Editor">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="Editor" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Editor" file-name="$ModuleName$">
             <define>UNITY_EDITOR</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -16,8 +18,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux32" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux32" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -28,8 +32,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Linux64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -40,8 +46,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Linux (any)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="LinuxUniversal" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="LinuxUniversal" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_LINUX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -52,8 +60,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -64,8 +74,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSX64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -76,8 +88,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="MacOS (any)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="OSXUniversal" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="OSXUniversal" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_OSX</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -88,8 +102,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Windows (32 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -100,8 +116,10 @@
           <orderEntry type="sourceFolder" />
         </module-layer>
         <module-layer name="Windows (64 bit)">
-          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.4" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows64" file-name="$ModuleName$">
+          <extension id="unity3d" sdk-module-name="" sdk-name="Unity3D 5.3.6" output-dir="$ModuleProductionOutputDirPath$" build-target="Windows64" file-name="$ModuleName$">
             <define>UNITY_STANDALONE_WIN</define>
+            <define>UNITY_5_0</define>
+            <define>UNITY_5_3</define>
           </extension>
           <content url="file://$MODULE_DIR$">
             <content-folder type="EXCLUDED" url="file://$MODULE_DIR$/.consulo" />
@@ -712,20 +730,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -847,20 +892,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -982,20 +1054,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1117,20 +1216,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1252,20 +1378,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1387,20 +1540,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1522,20 +1702,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1657,20 +1864,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />
@@ -1792,20 +2026,47 @@
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/BallMove.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/CameraFollow.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/DescriptionSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplain.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameManager.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextScore.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/StageSoundEffect.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleManager.cs.meta" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs" />
-          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleSoundEffect.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleNormal.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs" />
+          <content url="file://$USER_HOME$/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_ButtonSE.cs.meta" />
           <orderEntry type="sourceFolder" />
           <orderEntry type="module" module-name="Assembly-UnityScript-firstpass" />
           <orderEntry type="module" module-name="Assembly-CSharp-firstpass" />

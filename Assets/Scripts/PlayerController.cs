@@ -1,180 +1,220 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	private bool Left = false;
-	private bool Right = false;
-	private bool Jump = false;
-	public static bool Fall = false;
-	
-	const int DefaultLife = 1;	//プレイヤーのライフ
-	const float StunDuration = 1.0f;	//被ダメージ時の仰け反り時間
+    private delegate void EventHandler(object sender, EventArgs e);
 
-	private CharacterController controller;
-	private Animator animator;
-	private StageSoundEffect stageSoundEffect;
+    [SerializeField]
+    private float accelerationZ;
+    [SerializeField]
+    private float speedZ;
+    [SerializeField]
+    private float speedPlus;
 
-	Vector3 moveDirection = Vector3.zero;
-	private int life = DefaultLife;
-	private float recoverTime = 0.0f;
+    private ManagerGameMaster managerGameMaster;
+    private Mgr_GameSE mgrGameSE;
+    private CharacterController controller;
+    private Animator animator;
+    private CameraFollow cameraFollow;
 
-	[SerializeField] private float accelerationZ;
-	[SerializeField] private float gravity;
-	[SerializeField] private float speedX;
-	[SerializeField] private float speedZ;
-	[SerializeField] private float speedJump;
-	[SerializeField] private float speedPlus;
+    private const int DefaultLife = 1; //プレイヤーのライフ
+    private const float StunDuration = 1.0f; //被ダメージ時の仰け反り時間
 
-	//-----ライフ取得用の関数-----
-	public int Life()
-	{
-		return life;
-	}
-	//----------
+    private int life = DefaultLife;
+    private float recoverTime = 0.0f;
 
-	//-----仰け反り判定-----
-	private bool IsStan()
-	{
-		return recoverTime > 0.0f || life <= 0;
-	}
-	//----------
+    //左右移動関連----------
+    [SerializeField]
+    private float speedX;
 
-	//-----移動ボタン長押し用の判定-----
-	void PushLeftDown()
-	{
-		Left = true;
-	}
-	void PushLeftUp()
-	{
-		Left = false;
-	}
-	void PushRightDown()
-	{
-		Right = true;
-	}
-	void PushRightUp()
-	{
-		Right = false;
-	}
-	void PushJumpDown()
-	{
-		Jump = true;
-	}
-	void PushJumpUp()
-	{
-		Jump = false;
-	}
-	//----------
+    Vector3 moveDirection = Vector3.zero;
+    private bool Left = false;
+    private bool Right = false;
 
-	void Start()
-	{
-		controller = GetComponent<CharacterController>();
-		animator = GetComponent<Animator>();
-		stageSoundEffect = GameObject.Find("StageSoundEffect").GetComponent<StageSoundEffect>();
-		Fall = false;
-	}
+    void PushLeftDown() {
+        Left = true;
+    }
 
-	void Update()
-	{
-		if (Life () <= 0) {
-			Invoke("Dead", 1.5f);	//ライフが0になったらプレイヤーを消去する
-		}
+    void PushLeftUp() {
+        Left = false;
+    }
 
-		//移動を実行する
-		Vector3 globalDirection = transform.TransformDirection (moveDirection);
-		controller.Move (globalDirection * Time.deltaTime);
+    void PushRightDown() {
+        Right = true;
+    }
 
-		//重力分の力を毎フレーム追加する
-		moveDirection.y -= gravity * Time.deltaTime;
+    void PushRightUp() {
+        Right = false;
+    }
 
-		//移動後接地してたらY方向の速度はリセットする
-		if (controller.isGrounded)
-			moveDirection.y = 0;
+    void MoveLeft() {
+        this.transform.position += this.transform.right * Time.deltaTime * speedX * -1;
+    }
 
-		//速度が０以上なら走るアニメーションにする
-		animator.SetBool ("Run", moveDirection.z > 0.0f);
+    void MoveRight() {
+        this.transform.position += this.transform.right * Time.deltaTime * speedX;
+    }
+    //左右移動関連----------
 
-		speedZ += Time.deltaTime * speedPlus;
 
-		if (Left && controller.isGrounded) {
-			MoveLeft ();
-		} else if (Right && controller.isGrounded) {
-			MoveRight ();
-		} else if (Jump) {
-			MoveJump ();
-		}
 
-		//-----仰け反り時の行動-----
-		if (IsStan ()) {
-			//動きを止めて仰け反り状態からの復帰カウントを進める
-			moveDirection.x = 0.0f;
-			moveDirection.z = 0.0f;
-			recoverTime -= Time.deltaTime;
-		} else {
-			//徐々に加速しながら前進する
-			float acceleratedZ = moveDirection.z + (accelerationZ * Time.deltaTime);
-			moveDirection.z = Mathf.Clamp (acceleratedZ, 0, speedZ);
-		}
-		//----------
-	}
+    //ジャンプ関連----------
+    [SerializeField]
+    private float speedJump;
+    [SerializeField]
+    private float gravity;
 
-	//-----横移動及びジャンプ-----
-	void MoveLeft()
-	{
-		this.transform.position += this.transform.right * Time.deltaTime * speedX * -1;
-	}
+    private bool Jump = false;
 
-	void MoveRight()
-	{
-		this.transform.position += this.transform.right * Time.deltaTime * speedX;
-	}
-		
-	void MoveJump()
-	{
-		if (IsStan ())
-			return;	//仰け反り時の入力キャンセル
-		if (controller.isGrounded && Jump == true) {
-			moveDirection.y = speedJump;
-			animator.SetTrigger ("Jump");
-			stageSoundEffect.Jump();
-		}
-	}
-	//----------
+    void PushJumpDown() {
+        Jump = true;
+    }
 
-	//-----各オブジェクトとの衝突判定-----
-	void OnControllerColliderHit(ControllerColliderHit hit)
-	{
-		if (IsStan ())
-			return;
+    void PushJumpUp() {
+        Jump = false;
+    }
 
-		if (hit.gameObject.tag == "Obstacle") {
-			//ライフを減らして仰け反り状態に移行
-			life --;
-			recoverTime = StunDuration;
-			animator.SetTrigger ("Down");
-			stageSoundEffect.Down();
-		}
+    void MoveJump() {
+        if (IsStan())
+        {
+            return; //仰け反り時の入力キャンセル
+        }
+        if (controller.isGrounded && Jump == true)
+        {
+            moveDirection.y = speedJump;
+            animator.SetTrigger("Jump");
+            this.jumpModeSE(this, EventArgs.Empty);
+        }
+    }
+    //ジャンプ関連----------
 
-		if (hit.gameObject.tag == "Ball") {
-			life --;
-			recoverTime = StunDuration;
-			animator.SetTrigger ("Down");
-			stageSoundEffect.Down();
-			Destroy (hit.gameObject, 1.5f);
-		}
 
-		if (hit.gameObject.tag == "Fall") {
-			Fall = true;
-			life = 0;
-			stageSoundEffect.Falling();
-			Destroy (hit.gameObject);
-		}
-	}
-	//----------
 
-	void Dead()
-	{
-		gameObject.SetActive (false);
-	}
+    private event EventHandler jumpModeSE;
+
+    private event EventHandler downModeSE;
+
+    private event EventHandler fallModeSE;
+
+    void Awake() {
+        managerGameMaster = GameObject.Find("ManagerGameMaster").GetComponent<ManagerGameMaster>();
+        mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
+        controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+        cameraFollow = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
+    }
+
+    void Start() {
+        jumpModeSE += new EventHandler(mgrGameSE.SEJumpEvent);
+        downModeSE += new EventHandler(mgrGameSE.SEDownEvent);
+        downModeSE += new EventHandler(managerGameMaster.ModeGameOver);
+        fallModeSE += new EventHandler(mgrGameSE.SEFallEvent);
+        fallModeSE += new EventHandler(cameraFollow.PlayerFall);
+        fallModeSE += new EventHandler(managerGameMaster.ModeGameOver);
+    }
+
+    void Update() {
+        if (Life() <= 0)
+        {
+            Invoke("Dead", 1.5f); //ライフが0になったらプレイヤーを消去する
+        }
+
+        //移動を実行する
+        Vector3 globalDirection = transform.TransformDirection(moveDirection);
+        controller.Move(globalDirection * Time.deltaTime);
+
+        //重力分の力を毎フレーム追加する
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        //移動後接地してたらY方向の速度はリセットする
+        if (controller.isGrounded)
+        {
+            moveDirection.y = 0;
+        }
+
+        //速度が０以上なら走るアニメーションにする
+        animator.SetBool("Run", moveDirection.z > 0.0f);
+
+        speedZ += Time.deltaTime * speedPlus;
+
+        if (Left && controller.isGrounded)
+        {
+            MoveLeft();
+        }
+        else if (Right && controller.isGrounded)
+        {
+            MoveRight();
+        }
+        else if (Jump)
+        {
+            MoveJump();
+        }
+
+        //仰け反り時の行動----------
+        if (IsStan())
+        {
+            //動きを止めて仰け反り状態からの復帰カウントを進める
+            moveDirection.x = 0.0f;
+            moveDirection.z = 0.0f;
+            recoverTime -= Time.deltaTime;
+        }
+        else
+        {
+            //徐々に加速しながら前進する
+            float acceleratedZ = moveDirection.z + (accelerationZ * Time.deltaTime);
+            moveDirection.z = Mathf.Clamp(acceleratedZ, 0, speedZ);
+        }
+        //仰け反り時の行動----------
+    }
+
+    //各オブジェクトとの衝突判定----------
+    void OnControllerColliderHit(ControllerColliderHit hit) {
+        if (IsStan())
+        {
+            return;
+        }
+
+        if (hit.gameObject.tag == "Obstacle")
+        {
+            //ライフを減らして仰け反り状態に移行
+            life--;
+            recoverTime = StunDuration;
+            animator.SetTrigger("Down");
+            this.downModeSE(this, EventArgs.Empty);
+        }
+
+        if (hit.gameObject.tag == "Ball")
+        {
+            life--;
+            recoverTime = StunDuration;
+            animator.SetTrigger("Down");
+            this.downModeSE(this, EventArgs.Empty);
+            Destroy(hit.gameObject, 1.5f);
+        }
+
+        if (hit.gameObject.tag == "Fall")
+        {
+            life = 0;
+            this.fallModeSE(this, EventArgs.Empty);
+            Destroy(hit.gameObject);
+        }
+    }
+    //各オブジェクトとの衝突判定----------
+
+    void Dead() {
+        gameObject.SetActive(false);
+    }
+
+    //ライフ取得用の関数----------
+    public int Life() {
+        return life;
+    }
+    //ライフ取得用の関数----------
+
+    //仰け反り判定----------
+    private bool IsStan() {
+        return recoverTime > 0.0f || life <= 0;
+    }
+    //仰け反り判定----------
 }
