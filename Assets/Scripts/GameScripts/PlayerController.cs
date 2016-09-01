@@ -1,10 +1,13 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
     private delegate void EventHandler(object sender, EventArgs e);
 
+    [SerializeField]
+    private Text scoreText;
     [SerializeField]
     private float accelerationZ;
     [SerializeField]
@@ -16,7 +19,7 @@ public class PlayerController : MonoBehaviour {
     private Mgr_GameSE mgrGameSE;
     private CharacterController controller;
     private Animator animator;
-    private CameraFollow cameraFollow;
+    private CameraFollow01 cameraFollow;
 
     private const int DefaultLife = 1; //プレイヤーのライフ
     private const float StunDuration = 1.0f; //被ダメージ時の仰け反り時間
@@ -24,11 +27,13 @@ public class PlayerController : MonoBehaviour {
     private int life = DefaultLife;
     private float recoverTime = 0.0f;
 
+
+
     //左右移動関連----------
     [SerializeField]
     private float speedX;
 
-    Vector3 moveDirection = Vector3.zero;
+    private Vector3 moveDirection = Vector3.zero;
     private bool Left = false;
     private bool Right = false;
 
@@ -102,7 +107,7 @@ public class PlayerController : MonoBehaviour {
         mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        cameraFollow = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
+        cameraFollow = GameObject.Find("Main Camera").GetComponent<CameraFollow01>();
     }
 
     void Start() {
@@ -112,6 +117,7 @@ public class PlayerController : MonoBehaviour {
         fallModeSE += new EventHandler(mgrGameSE.SEFallEvent);
         fallModeSE += new EventHandler(cameraFollow.PlayerFall);
         fallModeSE += new EventHandler(managerGameMaster.ModeGameOver);
+        Application.targetFrameRate = 30;
     }
 
     void Update() {
@@ -157,6 +163,7 @@ public class PlayerController : MonoBehaviour {
             //動きを止めて仰け反り状態からの復帰カウントを進める
             moveDirection.x = 0.0f;
             moveDirection.z = 0.0f;
+            speedX = 0.0f;
             recoverTime -= Time.deltaTime;
         }
         else
@@ -168,7 +175,6 @@ public class PlayerController : MonoBehaviour {
         //仰け反り時の行動----------
     }
 
-    //各オブジェクトとの衝突判定----------
     void OnControllerColliderHit(ControllerColliderHit hit) {
         if (IsStan())
         {
@@ -195,12 +201,12 @@ public class PlayerController : MonoBehaviour {
 
         if (hit.gameObject.tag == "Fall")
         {
+            speedX = 0.0f;
             life = 0;
             this.fallModeSE(this, EventArgs.Empty);
             Destroy(hit.gameObject);
         }
     }
-    //各オブジェクトとの衝突判定----------
 
     void Dead() {
         gameObject.SetActive(false);

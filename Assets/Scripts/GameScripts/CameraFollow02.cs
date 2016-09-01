@@ -3,35 +3,32 @@ using UnityEngine;
 
 //単純にMainCameraをプレイヤーオブジェクトの子オブジェクトにして映す方法を取らないのは、
 //プレイヤーを隠したい時にカメラを追跡させない為（障害物に衝突した時や落下した時等）
-public class CameraFollow : MonoBehaviour {
+public class CameraFollow02 : MonoBehaviour {
+
+    private Vector3 diff;
 
     [SerializeField]
-    private PlayerController player;
+    private GameObject target;
     [SerializeField]
-    private Transform target;
-    private Vector3 offset;
+    private float followSpeed;
 
     private bool Fall = false;
 
     void Start() {
-        offset = GetComponent<Transform>().position - target.position * Time.deltaTime;
+        diff = target.transform.position - transform.position;
     }
 
-    void Update() {
-        if (player.Life() <= 0)
-        {
-            Invoke("CameraStop", 1.5f);
-        }
+    void LateUpdate() {
+        transform.position = Vector3.Lerp(
+                transform.position,
+                target.transform.position - diff,
+                Time.deltaTime * followSpeed
+        );
+
         if (Fall == true)
         {
             return;
         }
-        // 自分の座標にtargetの座標を代入する
-        GetComponent<Transform>().position = target.position + offset;
-    }
-
-    void CameraStop() {
-        return;
     }
 
     public void PlayerFall(object o, EventArgs e) {
