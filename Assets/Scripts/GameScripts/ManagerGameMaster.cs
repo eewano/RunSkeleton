@@ -4,9 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ManagerGameMaster : MonoBehaviour {
 
-    private delegate void EveHandAppearHide(object sender, EventArgs e);
-
-    private delegate void EveHandPLAYSE(object sender, EventArgs e);
+    private delegate void EventHandler(object sender, EventArgs e);
 
     private Mgr_GameSE mgrGameSE;
     private Mgr_TextGameOver mgrTextGameOver;
@@ -14,16 +12,15 @@ public class ManagerGameMaster : MonoBehaviour {
     private Mgr_BtnRetry mgrBtnRetry;
     private Mgr_BtnCtrl mgrBtnCtrl;
     private AudioSource stageBGM;
+    private Mgr_Score mgrScore;
 
     private float doubleTapTime;
     private bool isDoubleTapStart;
     private bool gameOver = false;
 
-    private event EveHandPLAYSE gameOverBGM;
+    private event EventHandler hideBtnCtrl;
 
-    private event EveHandAppearHide hideBtnCtrl;
-
-    private event EveHandAppearHide modeGAMEOVER;
+    private event EventHandler modeGAMEOVER;
 
     void Awake() {
         mgrGameSE = GameObject.Find("Mgr_GameSE").GetComponent<Mgr_GameSE>();
@@ -32,14 +29,16 @@ public class ManagerGameMaster : MonoBehaviour {
         mgrBtnRetry = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_BtnRetry>();
         mgrBtnCtrl = GameObject.Find("Mgr_GameButton").GetComponent<Mgr_BtnCtrl>();
         stageBGM = GameObject.Find("StageBGM").GetComponent<AudioSource>();
+        mgrScore = GameObject.Find("Mgr_GameText").GetComponent<Mgr_Score>();
     }
 
     void Start() {
-        hideBtnCtrl += new EveHandAppearHide(mgrBtnCtrl.HideBtnEvent);
-        gameOverBGM += new EveHandPLAYSE(mgrGameSE.BGMGameOverEvent);
-        modeGAMEOVER += new EveHandAppearHide(mgrTextGameOver.AppearTextEvent);
-        modeGAMEOVER += new EveHandAppearHide(mgrTextToTitle.AppearTextEvent);
-        modeGAMEOVER += new EveHandAppearHide(mgrBtnRetry.AppearBtnEvent);
+        hideBtnCtrl += new EventHandler(mgrBtnCtrl.HideBtnEvent);
+        modeGAMEOVER += new EventHandler(mgrGameSE.BGMGameOverEvent);
+        modeGAMEOVER += new EventHandler(mgrTextGameOver.AppearTextEvent);
+        modeGAMEOVER += new EventHandler(mgrTextToTitle.AppearTextEvent);
+        modeGAMEOVER += new EventHandler(mgrBtnRetry.AppearBtnEvent);
+        modeGAMEOVER += new EventHandler(mgrScore.ResultScore);
     }
 
     void Update() {
@@ -76,7 +75,6 @@ public class ManagerGameMaster : MonoBehaviour {
     void GameIsOver() {
         stageBGM.Stop();
         this.modeGAMEOVER(this, EventArgs.Empty);
-        this.gameOverBGM(this, EventArgs.Empty);
         gameOver = true;
     }
 
