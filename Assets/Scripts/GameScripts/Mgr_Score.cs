@@ -27,10 +27,18 @@ public class Mgr_Score : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "Stage01")
         {
             hiScoreText.text = "HighScore : " + PlayerPrefs.GetInt(keyNORMAL) + " pts";
+            if (PlayerPrefs.GetInt(keyNORMAL) >= 15000)
+            {
+                hiScoreText.color = new Color32(255, 192, 0, 255);
+            }
         }
         else if (SceneManager.GetActiveScene().name == "Stage02")
         {
             hiScoreText.text = "HighScore : " + PlayerPrefs.GetInt(keyHARD) + " pts";
+            if (PlayerPrefs.GetInt(keyHARD) >= 20000)
+            {
+                hiScoreText.color = new Color32(255, 192, 0, 255);
+            }
         }
     }
 
