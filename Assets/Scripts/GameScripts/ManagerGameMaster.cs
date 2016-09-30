@@ -39,6 +39,8 @@ public class ManagerGameMaster : MonoBehaviour {
         modeGAMEOVER += new EventHandler(mgrTextToTitle.AppearTextEvent);
         modeGAMEOVER += new EventHandler(mgrBtnRetry.AppearBtnEvent);
         modeGAMEOVER += new EventHandler(mgrScore.ResultScore);
+
+        GameStart();
     }
 
     void Update() {
@@ -70,6 +72,10 @@ public class ManagerGameMaster : MonoBehaviour {
                 }
             }
         }
+    }
+
+    void GameStart() {
+        stageBGM.Play();
     }
 
     void GameIsOver() {

@@ -9,7 +9,7 @@ public class ManagerExplainMaster : MonoBehaviour {
     void Start() {
         buttonSpecial.gameObject.SetActive(false);
 
-        if (PlayerPrefs.GetInt("Hiscore01") >= 3000 && PlayerPrefs.GetInt("Hiscore02") >= 4000)
+        if (PlayerPrefs.GetInt("HScore_NORMAL") >= 20000 && PlayerPrefs.GetInt("HScore_HARD") >= 12000)
         {
             buttonSpecial.gameObject.SetActive(true);
         }

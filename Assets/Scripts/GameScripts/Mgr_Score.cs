@@ -15,9 +15,9 @@ public class Mgr_Score : MonoBehaviour {
     private int score;
     private string keyNORMAL = "HScore_NORMAL";
     private string keyHARD = "HScore_HARD";
+    private string keySPECIAL = "HScore_SPECIAL";
 
     private bool gameOver = false;
-    private bool repeat = false;
 
     void Awake() {
         player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
@@ -26,16 +26,24 @@ public class Mgr_Score : MonoBehaviour {
     void Start() {
         if (SceneManager.GetActiveScene().name == "Stage01")
         {
-            hiScoreText.text = "HighScore : " + PlayerPrefs.GetInt(keyNORMAL) + " pts";
-            if (PlayerPrefs.GetInt(keyNORMAL) >= 15000)
+            hiScoreText.text = "HiScore : " + PlayerPrefs.GetInt(keyNORMAL) + " pts";
+            if (PlayerPrefs.GetInt(keyNORMAL) >= 20000)
             {
                 hiScoreText.color = new Color32(255, 192, 0, 255);
             }
         }
         else if (SceneManager.GetActiveScene().name == "Stage02")
         {
-            hiScoreText.text = "HighScore : " + PlayerPrefs.GetInt(keyHARD) + " pts";
-            if (PlayerPrefs.GetInt(keyHARD) >= 20000)
+            hiScoreText.text = "HiScore : " + PlayerPrefs.GetInt(keyHARD) + " pts";
+            if (PlayerPrefs.GetInt(keyHARD) >= 15000)
+            {
+                hiScoreText.color = new Color32(255, 192, 0, 255);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage03")
+        {
+            hiScoreText.text = "HiScore : " + PlayerPrefs.GetInt(keySPECIAL) + " pts";
+            if (PlayerPrefs.GetInt(keySPECIAL) >= 10000)
             {
                 hiScoreText.color = new Color32(255, 192, 0, 255);
             }
@@ -44,7 +52,6 @@ public class Mgr_Score : MonoBehaviour {
 
     void Update() {
         ScoreUpdate();
-        HiScoreFlash();
     }
 
     void ScoreUpdate() {
@@ -55,12 +62,9 @@ public class Mgr_Score : MonoBehaviour {
             if (Input.GetKeyUp("d"))
             {
                 PlayerPrefs.DeleteAll();
-                hiScoreText.text = "HighScore : " + PlayerPrefs.GetInt("HighScore") + " pts";
+                hiScoreText.text = "HiScore : " + PlayerPrefs.GetInt("HiScore") + " pts";
             }
         }
-    }
-
-    void HiScoreFlash() {
     }
 
     public void ChangeScore(object o, int i) {
@@ -77,7 +81,6 @@ public class Mgr_Score : MonoBehaviour {
             gameOver = true;
             scoreText.text = "";
             PlayerPrefs.SetInt(keyNORMAL, score);
-            repeat = true;
 
             hiScoreText.fontSize = 80;
             hiScoreText.fontStyle = FontStyle.Bold;
@@ -89,12 +92,22 @@ public class Mgr_Score : MonoBehaviour {
             gameOver = true;
             scoreText.text = "";
             PlayerPrefs.SetInt(keyHARD, score);
-            repeat = true;
 
             hiScoreText.fontSize = 80;
             hiScoreText.fontStyle = FontStyle.Bold;
             hiScoreText.color = new Color32(255, 192, 0, 255);
             hiScoreText.text = "Y o u   G o t\n" + PlayerPrefs.GetInt(keyHARD) + " pts";
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage03" && PlayerPrefs.GetInt(keySPECIAL) < score)
+        {
+            gameOver = true;
+            scoreText.text = "";
+            PlayerPrefs.SetInt(keySPECIAL, score);
+
+            hiScoreText.fontSize = 80;
+            hiScoreText.fontStyle = FontStyle.Bold;
+            hiScoreText.color = new Color32(255, 192, 0, 255);
+            hiScoreText.text = "Y o u   G o t\n" + PlayerPrefs.GetInt(keySPECIAL) + " pts";
         }
     }
 }

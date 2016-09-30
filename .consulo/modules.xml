@@ -84,7 +84,7 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
-          <orderEntry type="module-library">
+          <orderEntry type="module-library" exported="">
             <library>
               <binaries>
                 <root url="netdll://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Editor/Plugins/UnityEditorConsuloPlugin5.3.dll!/" />
@@ -131,6 +131,8 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Standard Assets/Image Effects (Pro Only)/TwirlEffect.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Standard Assets/Image Effects (Pro Only)/VortexEffect.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Standard Assets/Image Effects (Pro Only)/VortexEffect.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/DebugController.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/DebugController.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/EventHandler.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/EventHandler.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
@@ -141,6 +143,9 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/GalaxyBoxUpdater.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/RandomRotation.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/RandomRotation.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/AreaGenerator.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/AreaGenerator.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/BallMove01.cs" />
@@ -165,13 +170,16 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Score.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Score.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Skybox.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Skybox.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextGameOver.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ObjSpawnPoint.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ObjSpawnPoint.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/PlayerController.cs.meta" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ObjSpawnPoint.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnExplain.cs" />
@@ -199,6 +207,13 @@
           <orderEntry type="dot-net-library" name="System.Core" />
           <orderEntry type="dot-net-library" name="System.Xml" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module-library" exported="">
+            <library>
+              <binaries>
+                <root url="netdll://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Editor/Plugins/UnityEditorConsuloPlugin5.3.dll!/" />
+              </binaries>
+            </library>
+          </orderEntry>
         </module-layer>
       </module>
     </modules>

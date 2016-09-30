@@ -37,19 +37,19 @@ public class PlayerController : MonoBehaviour {
     private bool Left = false;
     private bool Right = false;
 
-    void PushLeftDown() {
+    public void PushLeftDown() {
         Left = true;
     }
 
-    void PushLeftUp() {
+    public void PushLeftUp() {
         Left = false;
     }
 
-    void PushRightDown() {
+    public void PushRightDown() {
         Right = true;
     }
 
-    void PushRightUp() {
+    public void PushRightUp() {
         Right = false;
     }
 
@@ -173,6 +173,15 @@ public class PlayerController : MonoBehaviour {
             moveDirection.z = Mathf.Clamp(acceleratedZ, 0, speedZ);
         }
         //仰け反り時の行動----------
+
+        if (speedX < 12.0f)
+        {
+            speedX += 0.0008f;
+        }
+        else if (speedX >= 12.0f)
+        {
+            speedX = 12.0f;
+        }
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit) {
@@ -223,4 +232,8 @@ public class PlayerController : MonoBehaviour {
         return recoverTime > 0.0f || life <= 0;
     }
     //仰け反り判定----------
+
+    public void moveSpeedUp(object o, float i) {
+        speedX += i;
+    }
 }
