@@ -35,7 +35,7 @@ public class Mgr_ItemScore : MonoBehaviour {
     void OnTriggerEnter(Collider hit) {
         if (hit.gameObject.tag == "Player")
         {
-            this.getItemEvent(this, 400);
+            this.getItemEvent(this, 500);
             this.sEPlayEvent(this, EventArgs.Empty);
         }
         Destroy(gameObject);
