@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour {
         {
             speedX += 0.0008f;
         }
-        else if (speedX >= 12.0f)
+        else if (speedX > 12.0f)
         {
             speedX = 12.0f;
         }
@@ -197,15 +197,6 @@ public class PlayerController : MonoBehaviour {
             recoverTime = StunDuration;
             animator.SetTrigger("Down");
             this.downModeSE(this, EventArgs.Empty);
-        }
-
-        if (hit.gameObject.tag == "Ball")
-        {
-            life--;
-            recoverTime = StunDuration;
-            animator.SetTrigger("Down");
-            this.downModeSE(this, EventArgs.Empty);
-            Destroy(hit.gameObject, 1.5f);
         }
 
         if (hit.gameObject.tag == "Fall")
@@ -233,7 +224,10 @@ public class PlayerController : MonoBehaviour {
     }
     //仰け反り判定----------
 
-    public void moveSpeedUp(object o, float i) {
-        speedX += i;
+    public void getBomb(object o, EventArgs e) {
+        life--;
+        recoverTime = StunDuration;
+        animator.SetTrigger("Down");
+        this.downModeSE(this, EventArgs.Empty);
     }
 }

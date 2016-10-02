@@ -4,7 +4,7 @@ using UnityEngine;
 public class Mgr_GameSE : MonoBehaviour {
 
     private AudioSource
-    sEDown, sEFall, bgmGameOver, sEJump, sEMove;
+    sEDown, sEFall, bgmGameOver, sEJump, sEMove, sEGetItem, sEGetBomb;
 
     void Awake() {
         AudioSource[] audioSources = GetComponents<AudioSource>();
@@ -13,6 +13,8 @@ public class Mgr_GameSE : MonoBehaviour {
         sEDown = audioSources[2];
         sEFall = audioSources[3];
         bgmGameOver = audioSources[4];
+        sEGetItem = audioSources[5];
+        sEGetBomb = audioSources[6];
     }
 
     public void SEMoveEvent(object o, EventArgs e) {
@@ -33,5 +35,13 @@ public class Mgr_GameSE : MonoBehaviour {
 
     public void BGMGameOverEvent(object o, EventArgs e) {
         bgmGameOver.PlayOneShot(bgmGameOver.clip);
+    }
+
+    public void SEGetItemEvent(object o, EventArgs e) {
+        sEGetItem.PlayOneShot(sEGetItem.clip);
+    }
+
+    public void SEGetBombEvent(object o, EventArgs e) {
+        sEGetBomb.PlayOneShot(sEGetBomb.clip);
     }
 }

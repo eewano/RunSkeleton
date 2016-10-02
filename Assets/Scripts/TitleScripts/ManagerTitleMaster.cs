@@ -18,7 +18,7 @@ public class ManagerTitleMaster : MonoBehaviour {
         textScoreNormal.text = "NORMAL : " + PlayerPrefs.GetInt("HScore_NORMAL") + "pts";
         textScoreHard.text = "HARD : " + PlayerPrefs.GetInt("HScore_HARD") + "pts";
 
-        if (PlayerPrefs.GetInt("HScore_NORMAL") >= 20000 && PlayerPrefs.GetInt("HScore_HARD") >= 12000)
+        if (PlayerPrefs.GetInt("HScore_NORMAL") >= 18000 && PlayerPrefs.GetInt("HScore_HARD") >= 22000)
         {
             buttonSpecial.gameObject.SetActive(true);
             textScoreSpecial.text = "Special : " + PlayerPrefs.GetInt("HScore_SPECIAL") + "pts";

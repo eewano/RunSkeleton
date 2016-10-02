@@ -13,6 +13,7 @@ public class Mgr_Score : MonoBehaviour {
     private Text getHiScoreText;
     private PlayerController player;
     private int score;
+    private int itemScore;
     private string keyNORMAL = "HScore_NORMAL";
     private string keyHARD = "HScore_HARD";
     private string keySPECIAL = "HScore_SPECIAL";
@@ -56,7 +57,7 @@ public class Mgr_Score : MonoBehaviour {
 
     void ScoreUpdate() {
         if (gameOver == false) {
-            score = CalcScore();
+            score = CalcScore() + itemScore;
             scoreText.text = score + " pts";
 
             if (Input.GetKeyUp("d"))
@@ -68,7 +69,7 @@ public class Mgr_Score : MonoBehaviour {
     }
 
     public void ChangeScore(object o, int i) {
-        score += i;
+        itemScore += i;
     }
 
     private int CalcScore() {

@@ -2,14 +2,11 @@
 
 public class BallMove01 : MonoBehaviour {
 
-    private Vector3 startPosition;
-
-    const float amplitude = 5.0f;    //ボールのX軸の振れ幅
-    [SerializeField]
+    private const float amplitude = 5.0f;    //ボールのX軸の振れ幅
     private float speed;
 
     void Start() {
-        startPosition = transform.localPosition;
+        speed = Random.Range(0.8f, 1.8f);
     }
 
     void Update() {
@@ -17,6 +14,6 @@ public class BallMove01 : MonoBehaviour {
         float x = amplitude * Mathf.Cos(Time.time * speed);
 
         //xを変位させたポジションに再設定する
-        transform.localPosition = startPosition + new Vector3(x, 0, 0);
+        transform.localPosition = new Vector3(x, 0, 0);
     }
 }

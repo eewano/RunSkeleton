@@ -97,6 +97,7 @@
         <module-layer name="Default">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/ObjDelete.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/Desaturate/DesaturateEffect.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
@@ -143,6 +144,7 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainNormal.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainSpecial.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/GalaxyBoxUpdater.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/GalaxyBoxUpdater.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/RandomRotation.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExternalScripts/RandomRotation.cs.meta" />
@@ -158,16 +160,22 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow01.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow02.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/CameraFollow02.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ItemSpawnPoint.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ItemSpawnPoint.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ManagerGameMaster.cs.meta" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BallObj.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Ball01.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Ball01.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_ItemBomb.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_ItemBomb.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_ItemScore.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_ItemScore.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Score.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Score.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Skybox.cs" />
@@ -178,6 +186,8 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_TextToTitle.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ObjSpawnPoint.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ObjSpawnPoint.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ParticleDelete.cs" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/ParticleDelete.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/PlayerController.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/PlayerController.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
