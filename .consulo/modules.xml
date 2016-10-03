@@ -97,9 +97,6 @@
         <module-layer name="Default">
           <extension id="unity3d-child" />
           <extension id="unity3d-csharp-child" unsafe-code="false" language-version-module-name="" language-version-name="" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Mgr_BtnCtrlPlace.cs" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Mgr_BtnDominant.cs" />
-          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Mgr_BtnDominant.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/ExplainScripts/Mgr_BtnExplainHard.cs" />
@@ -128,6 +125,7 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_Ball01.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrl.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnCtrlPlace.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_BtnRetry.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/GameScripts/Mgr_GameSE.cs" />
@@ -158,6 +156,7 @@
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/OtherScripts/EventHandler.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/ManagerTitleMaster.cs.meta" />
+          <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnDominant.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnExplain.cs" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnExplain.cs.meta" />
           <content url="file://$USER_HOME$/Unity_Projects/RunSkeleton/Assets/Scripts/TitleScripts/Mgr_BtnTitleHard.cs" />
