@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour {
     private float recoverTime = 0.0f;
 
 
-
     //左右移動関連----------
     [SerializeField]
     private float speedX;
@@ -52,17 +51,7 @@ public class PlayerController : MonoBehaviour {
     public void PushRightUp() {
         Right = false;
     }
-
-    void MoveLeft() {
-        this.transform.position += this.transform.right * Time.deltaTime * speedX * -1;
-    }
-
-    void MoveRight() {
-        this.transform.position += this.transform.right * Time.deltaTime * speedX;
-    }
     //左右移動関連----------
-
-
 
     //ジャンプ関連----------
     [SerializeField]
@@ -79,21 +68,7 @@ public class PlayerController : MonoBehaviour {
     void PushJumpUp() {
         Jump = false;
     }
-
-    void MoveJump() {
-        if (IsStan())
-        {
-            return; //仰け反り時の入力キャンセル
-        }
-        if (controller.isGrounded && Jump == true)
-        {
-            moveDirection.y = speedJump;
-            animator.SetTrigger("Jump");
-            this.jumpModeSE(this, EventArgs.Empty);
-        }
-    }
     //ジャンプ関連----------
-
 
 
     private event EventHandler jumpModeSE;
@@ -121,9 +96,33 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        if (Life() <= 0)
-        {
+        if (Life() <= 0) {
             Invoke("Dead", 1.5f); //ライフが0になったらプレイヤーを消去する
+        }
+
+        //移動後接地してたらY方向の速度はリセットする
+        if (controller.isGrounded) {
+            moveDirection.y = 0;
+        }
+    }
+
+    void FixedUpdate() {
+        if (Left && controller.isGrounded) {
+            this.transform.position += this.transform.right * Time.deltaTime * speedX * -1;
+        }
+        else if (Right && controller.isGrounded) {
+            this.transform.position += this.transform.right * Time.deltaTime * speedX;
+        }
+
+        if (Jump) {
+            if (IsStan()) {
+                return; //仰け反り時の入力キャンセル
+            }
+            if (controller.isGrounded && Jump == true) {
+                moveDirection.y = speedJump;
+                animator.SetTrigger("Jump");
+                this.jumpModeSE(this, EventArgs.Empty);
+            }
         }
 
         //移動を実行する
@@ -133,65 +132,40 @@ public class PlayerController : MonoBehaviour {
         //重力分の力を毎フレーム追加する
         moveDirection.y -= gravity * Time.deltaTime;
 
-        //移動後接地してたらY方向の速度はリセットする
-        if (controller.isGrounded)
-        {
-            moveDirection.y = 0;
-        }
-
         //速度が０以上なら走るアニメーションにする
         animator.SetBool("Run", moveDirection.z > 0.0f);
 
         speedZ += Time.deltaTime * speedPlus;
 
-        if (Left && controller.isGrounded)
-        {
-            MoveLeft();
-        }
-        else if (Right && controller.isGrounded)
-        {
-            MoveRight();
-        }
-        else if (Jump)
-        {
-            MoveJump();
-        }
-
         //仰け反り時の行動----------
-        if (IsStan())
-        {
+        if (IsStan()) {
             //動きを止めて仰け反り状態からの復帰カウントを進める
             moveDirection.x = 0.0f;
             moveDirection.z = 0.0f;
             speedX = 0.0f;
             recoverTime -= Time.deltaTime;
         }
-        else
-        {
+        else {
             //徐々に加速しながら前進する
             float acceleratedZ = moveDirection.z + (accelerationZ * Time.deltaTime);
             moveDirection.z = Mathf.Clamp(acceleratedZ, 0, speedZ);
         }
         //仰け反り時の行動----------
 
-        if (speedX < 12.0f)
-        {
+        if (speedX < 12.0f) {
             speedX += 0.0008f;
         }
-        else if (speedX > 12.0f)
-        {
+        else if (speedX > 12.0f) {
             speedX = 12.0f;
         }
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit) {
-        if (IsStan())
-        {
+        if (IsStan()) {
             return;
         }
 
-        if (hit.gameObject.tag == "Obstacle")
-        {
+        if (hit.gameObject.tag == "Obstacle") {
             //ライフを減らして仰け反り状態に移行
             life--;
             recoverTime = StunDuration;
@@ -199,8 +173,7 @@ public class PlayerController : MonoBehaviour {
             this.downModeSE(this, EventArgs.Empty);
         }
 
-        if (hit.gameObject.tag == "Fall")
-        {
+        if (hit.gameObject.tag == "Fall") {
             speedX = 0.0f;
             life = 0;
             this.fallModeSE(this, EventArgs.Empty);

@@ -11,7 +11,7 @@
     <file path="/TitleManager.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1461231426037" ignored="false" />
     <file path="/Mgr_SEGame.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1472374849494" ignored="false" />
     <file path="/ManagerGameMaster.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1475226426637" ignored="false" />
-    <file path="/PlayerController.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1475300219131" ignored="false" />
+    <file path="/PlayerController.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1475820880829" ignored="false" />
     <file path="/Mgr_BtnCtrl.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1472376472776" ignored="false" />
     <file path="/a.dummy" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1472378669469" ignored="false" />
     <file path="/CameraFollow.cs" changelist="bc087f24-f5d6-4f58-8cb2-33ec3e99d876" time="1472379841657" ignored="false" />
@@ -55,7 +55,18 @@
     <fileColor scope="Test Resources" color="2a3b2c" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -100,7 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_BallObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/BallMove01.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_Ball01.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/ObjDelete.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_ItemBomb.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ExplainScripts/ManagerExplainMaster.cs" />
@@ -109,14 +119,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Mgr_BtnDominant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_ItemScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/PlayerController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1280" />
+    <option name="x" value="1280" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="1001" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -144,6 +155,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,10 +207,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RunSkeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RunSkeleton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,19 +391,21 @@
       <workItem from="1475422438806" duration="415000" />
       <workItem from="1475427647844" duration="2338000" />
       <workItem from="1475430427209" duration="2950000" />
-      <workItem from="1475464070452" duration="375000" />
+      <workItem from="1475464070452" duration="602000" />
+      <workItem from="1475483989197" duration="358000" />
+      <workItem from="1475819987401" duration="821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61129000" />
+    <option name="totallyTimeSpent" value="62535000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="23" width="1280" height="1001" extended-state="6" />
-    <editor active="false" />
+    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25703126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -743,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="174" column="28" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Mgr_ItemBomb.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -796,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
           <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,6 +831,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
